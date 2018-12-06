@@ -4,12 +4,13 @@ Fundamentals of data science.
 # Theory
 
 ## Probability
-- [Probability Theory and Mathematical Statistics at Penn State](https://onlinecourses.science.psu.edu/stat414/)
-- [Applied Statistics 500](https://newonlinecourses.science.psu.edu/statprogram/stat500)
+- [Probability Theory and Mathematical Statistics at Penn State (Stat 414/415)](https://onlinecourses.science.psu.edu/stat414/)
 - [Introduction to the Theory of Random Signals and Noise](http://library.mpib-berlin.mpg.de/toc/ze_2006_1500.pdf)
 - [Probability Theory: The Logic of Science by E.T. Jaynes](https://bayes.wustl.edu/etj/prob/book.pdf)
 
 ## Statistics
+- [Applied Statistics at Penn State (Stat 500)](https://newonlinecourses.science.psu.edu/statprogram/stat500)
+- [Regression Methods at Penn State (Stat 501)](https://newonlinecourses.science.psu.edu/stat501/)
 - [Statistical Thinking and Data Analysis by Cynthia Rudin](https://ocw.mit.edu/courses/sloan-school-of-management/15-075j-statistical-thinking-and-data-analysis-fall-2011/index.htm)
 
 # Software
