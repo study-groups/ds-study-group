@@ -13,6 +13,11 @@ Fundamentals of data science.
 - [Regression Methods at Penn State (Stat 501)](https://newonlinecourses.science.psu.edu/stat501/)
 - [Statistical Thinking and Data Analysis by Cynthia Rudin](https://ocw.mit.edu/courses/sloan-school-of-management/15-075j-statistical-thinking-and-data-analysis-fall-2011/index.htm)
 
+## Primary sources
+Papers and books that are tractable to the invention of their subject.
+- [Logistic Regression](https://papers.tinbergen.nl/02119.pdf)
+
+
 # Software
 
 ## Python
@@ -24,3 +29,4 @@ Fundamentals of data science.
 - [10 min to Pandas](https://pandas.pydata.org/pandas-docs/stable/10min.html)
 - [Dataquest tutorial](https://www.dataquest.io/blog/pandas-python-tutorial/)
 - [Datacamp tutorial](https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python)
+
