@@ -66,7 +66,7 @@ in a data set. It does this by representing data as points in a low-dimensional 
 - [https://becominghuman.ai/to-all-data-scientists-the-one-graph-algorithm-you-need-to-know-59178dbb1ec2](https://becominghuman.ai/to-all-data-scientists-the-one-graph-algorithm-you-need-to-know-59178dbb1ec2)
 Connected Components: you can think of Connected Components in very layman’s terms as sort of a hard clustering algorithm 
 which finds clusters/islands in related/connected data.
-  -[Connected Components in MapReduce and Beyond](https://ai.google/research/pubs/pub43122)
+- [Connected Components in MapReduce and Beyond](https://ai.google/research/pubs/pub43122)
   
 ## Platforms
 - [neural-net-from-scratch-with-pytorch](https://medium.com/@tomgrek/building-your-first-neural-net-from-scratch-with-pytorch-56b0e9c84d54)
