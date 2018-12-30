@@ -53,7 +53,7 @@ In statistics, multiple correspondence analysis (MCA) is a data analysis techniq
 for nominal categorical data, used to detect and represent underlying structures 
 in a data set. It does this by representing data as points in a low-dimensional Euclidean space. 
 - [What is the intuitive relationship between SVD 
-  and PCA?]https://math.stackexchange.com/questions/3869/what-is-the-intuitive-relationship-between-svd-and-pca()
+  and PCA?](https://math.stackexchange.com/questions/3869/what-is-the-intuitive-relationship-between-svd-and-pca)
 
 ## Data simulation
 - [Simulate Regression Model](https://blogs.sas.com/content/iml/2017/01/25/simulate-regression-model-sas.html)
