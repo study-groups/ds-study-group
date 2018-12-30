@@ -10,3 +10,4 @@ Good overview of log-loss (the idea of mis-classifying labeled data).
 Shannon's master work. Part 1: Discrete Noiseless Systems (first 18 pages) is quite tractable. Includes a
 clear introduction to Markov Procceses.
   - [Andrew Ng's Notes on Markov decision processes](http://cs229.stanford.edu/notes/cs229-notes12.pdf) 
+  - [Pavlov.js](https://github.com/NathanEpstein/Pavlov.js/) Pavlov.js uses Markov Decision Processes to implement reinforcement learning. It is written in C++ and compiled to JavaScript.
