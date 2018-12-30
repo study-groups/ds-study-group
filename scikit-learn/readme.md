@@ -1,6 +1,6 @@
 # Selected Scikit-learn examples
 
-# Datasets
+## Datasets
 
 - [Data set loading examples](https://scikit-learn.org/stable/datasets/index.html#sample-generators): 
 Includes toy data sets, real-world data sets including 20newsgroups labled faces, 
