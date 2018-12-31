@@ -19,3 +19,9 @@ clear introduction to Markov Procceses.
   true posterior probabilities
 
   - [Comparison of Calibration of Classifiers](https://scikit-learn.org/stable/auto_examples/calibration/plot_compare_calibration.html#id2)
+
+## B-list
+- [Degrees of Freedom](http://www.nohsteachers.info/pcaso/ap_statistics/PDFs/DegreesOfFreedom.pdf) by Helen M. Waler. 
+Presents t-statistic as a ratio of two circles on a plane in N dimensional space. Numerator is sample_mean - population_mean 
+and denominator is the standard error, s, of the mean measurement. The fluctuation of this ratio from sample to
+sample produces what is known as the t-distribution. (the distribution under the null hypothesis for a t-test).
