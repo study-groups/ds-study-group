@@ -3,13 +3,20 @@
 ## Statistics
 - [p-value](https://en.wikipedia.org/wiki/P-value) The p-value is used in the context of null hypothesis testing in order to quantify the idea of statistical significance of evidence. A claim is assumed valid if its counter-claim is improbable. That is, a low p-value means it was unlikely predicted value was by chance. Conversely, given high p-value, we rejectthe null hypothesis implies that the correct hypothesis lies in the logical complement of the null hypothesis. However, unless there is a single alternative to the null hypothesis, the rejection of null hypothesis does not tell us which of the alternatives might be the correct one.
 
+- [One and Two Tailed Tests](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-what-are-the-differences-between-one-tailed-and-two-tailed-tests/) The default among statistical packages performing tests is to report two-tailed p-values.  Because the most commonly used test statistic distributions (standard normal, Student’s t) are symmetric about zero, most one-tailed p-values can be derived from the two-tailed p-values.
+
 - [Coefficient of Determination (R-squared)](https://en.wikipedia.org/wiki/Coefficient_of_determination) 
 R2 = 1 - SS_res / SS_tot. In a general form, R2 can be seen to be related to the fraction of variance unexplained (FVU), since the second term compares the unexplained variance (variance of the model's errors) with the total variance (of the data): R2 = 1 - FVU. Suppose R2 = 0.49. This implies that 49% of the variability of the dependent variable has been accounted for, and the remaining 51% of the variability is still unaccounted for.
+- [Adjusted R2](http://blog.minitab.com/blog/adventures-in-statistics-2/multiple-regession-analysis-use-adjusted-r-squared-and-predicted-r-squared-to-include-the-correct-number-of-variables)
+Use the adjusted R-square to compare models with different numbers of predictors
+Use the predicted R-square to determine how well the model predicts new observations and whether the model is too complicated
+
 - [Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test) A chi-squared test, also written as χ2 test, is any statistical hypothesis test where the sampling distribution of the test statistic is a chi-squared distribution when the null hypothesis is true. Used for categorical data.
 
 
 - [F-test](https://en.wikipedia.org/wiki/F-test) An F-test is any statistical test in which the test statistic has an F-distribution under the null hypothesis whose shape depends on degree of freedom. The F test statistic is the ratio
 of two independent chi-squared variables divided by their degrees of freedom. It is most often used when comparing statistical models that have been fitted to a data set, in order to identify the model that best fits the population from which the data were sampled. 
+  - [f-statistic-value-test](https://www.statisticshowto.datasciencecentral.com/probability-and-statistics/f-statistic-value-test/)
 
 - [ANOVA](https://people.richland.edu/james/lecture/m170/ch13-1wy.html) Image a table with k columns of variables (between grou variation) and N  rows of samples (within group variation).
 There is the between group variation and the within group variation. If the variance caused by the interaction between the samples is much larger when compared to the variance that appears within each group, then it is because the means aren't the same.
