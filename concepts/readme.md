@@ -1,6 +1,6 @@
 # Data Science Concepts
 - [Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test) A chi-squared test, also written as χ2 test, is any statistical hypothesis test where the sampling distribution of the test statistic is a chi-squared distribution when the null hypothesis is true.
-- [p-value[(https://en.wikipedia.org/wiki/P-value)
+- [p-value](https://en.wikipedia.org/wiki/P-value)
 - [Degrees of Freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics))
 - [Interquartile range](https://en.wikipedia.org/wiki/Interquartile_range) Building block of box plot.
 - [Normal probability plot](https://en.wikipedia.org/wiki/Normal_probability_plot)
