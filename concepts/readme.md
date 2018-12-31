@@ -14,6 +14,7 @@ of two independent chi-squared variables divided by their degrees of freedom. It
 - [ANOVA](https://people.richland.edu/james/lecture/m170/ch13-1wy.html) Image a table with k columns of variables (between grou variation) and N  rows of samples (within group variation).
 There is the between group variation and the within group variation. If the variance caused by the interaction between the samples is much larger when compared to the variance that appears within each group, then it is because the means aren't the same.
 
+- [F-distribution](https://en.wikipedia.org/wiki/F-distribution)
 The F-distribution is the distribution under null hypothesis in the analysis of variance (ANOVA), 
 In this case degree of freedom is (k-1) for mean-squared error between groups, s_b^2  and (N-k) for the variance due to the differences within individual samples, denoted s_w^2  (Mean Square Within groups). This is the within group variation divided by its degrees of freedom (N-k). F = s_b^2 / s_w^2. The F test statistic is found by dividing the between group variance by the within group variance. The degrees of freedom for the numerator are the degrees of freedom for the between group (k-1) and the degrees of freedom for the denominator are the degrees of freedom for the within group (N-k).
 
@@ -22,6 +23,9 @@ In this case degree of freedom is (k-1) for mean-squared error between groups, s
 
 - [Interquartile range](https://en.wikipedia.org/wiki/Interquartile_range) Building block of box plot. Alternative
 to speaking of probability distribution's standard deviation.
+
+- [Q-Q Plot](https://en.wikipedia.org/wiki/Q%E2%80%93Q_plot)
+In statistics, a Q–Q (quantile-quantile) plot is a probability plot, which is a graphical method for comparing two probability distributions by plotting their quantiles against each other.
 
 - [Normal probability plot](https://en.wikipedia.org/wiki/Normal_probability_plot)
 he normal probability plot is a graphical technique to identify substantive 
@@ -42,8 +46,9 @@ neural network that can learn a probability distribution over its set of inputs.
 -[Expectation Maximization with Gaussian Mixture Models](http://www.aishack.in/tutorials/expectation-maximization-gaussian-mixture-model/)
 how to model multivariate data with a Gaussian Mixture Model. 
 For training this model, we use a technique called Expectation Maximization.
-- [Cross Entropy](https://en.wikipedia.org/wiki/Cross_entropy)
+- [Cross Entropy](https://en.wikipedia.org/wiki/Cross_entropy) In information theory, the cross entropy between two probability distributions {\displaystyle p} p and {\displaystyle q} q over the same underlying set of events measures the average number of bits needed to identify an event drawn from the set, if a coding scheme is used that is optimized for an "artificial" probability distribution {\displaystyle q} q, rather than the "true" distribution {\displaystyle p} p.
   -Related to [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)
+  
 ## Bayesian
 - [Bayesian_inference](https://en.wikipedia.org/wiki/Bayesian_inference)
 - [Conjugate priors](https://en.wikipedia.org/wiki/Conjugate_prior)
