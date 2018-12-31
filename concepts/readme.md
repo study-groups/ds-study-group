@@ -1,5 +1,7 @@
 # Data Science Concepts
-
+- [Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test) A chi-squared test, also written as χ2 test, is any statistical hypothesis test where the sampling distribution of the test statistic is a chi-squared distribution when the null hypothesis is true.
+- [p-value[(https://en.wikipedia.org/wiki/P-value)
+- [Degrees of Freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics))
 - [Interquartile range](https://en.wikipedia.org/wiki/Interquartile_range) Building block of box plot.
 - [Normal probability plot](https://en.wikipedia.org/wiki/Normal_probability_plot)
 he normal probability plot is a graphical technique to identify substantive 
@@ -34,6 +36,7 @@ For training this model, we use a technique called Expectation Maximization.
   - [Chi-squared test on wikipedia](https://en.wikipedia.org/wiki/Chi-squared_test)
 
 ## Regression
+- [Multiple Regression](https://people.richland.edu/james/ictcm/2004/multiple.html)  <- Fav, simple and clear
 - [Regression Analysis ala Stata](https://stats.idre.ucla.edu/stata/output/regression-analysis-2/) 
 - [Regression Tutorial with Analysis Examples, by Jim](http://statisticsbyjim.com/regression/regression-tutorial-analysis-examples/)
 - [Reading a regresion table](http://svmiller.com/blog/2014/08/reading-a-regression-table-a-guide-for-students/)
@@ -43,6 +46,9 @@ For training this model, we use a technique called Expectation Maximization.
 - [Stats Models vs SKLearn for Linear Regression](https://becominghuman.ai/stats-models-vs-sklearn-for-linear-regression-f19df95ad99b)
 - [The Simple Linear Regression Model at Penn State](https://newonlinecourses.science.psu.edu/stat501/node/253/)
 - [Light Gradient Boosting](https://lightgbm.readthedocs.io/en/latest/)
+
+## Random Forest
+- [Hyperparameter Tuning the Random Forest in Python](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
 
 ## PCA
 - [Tutorial on Principal Component Analysis](https://arxiv.org/pdf/1404.1100.pdf)
