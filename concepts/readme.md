@@ -1,5 +1,18 @@
 # Data Science Concepts
 - [Chi-squared test](https://en.wikipedia.org/wiki/Chi-squared_test) A chi-squared test, also written as χ2 test, is any statistical hypothesis test where the sampling distribution of the test statistic is a chi-squared distribution when the null hypothesis is true.
+- [Coefficient of Determination (R-squared)](https://en.wikipedia.org/wiki/Coefficient_of_determination) 
+R2 = 1 - SS_res / SS_tot. In a general form, R2 can be seen to be related to the fraction of variance unexplained (FVU), since the second term compares the unexplained variance (variance of the model's errors) with the total variance (of the data): R2 = 1 - FVU. Suppose R2 = 0.49. This implies that 49% of the variability of the dependent variable has been accounted for, and the remaining 51% of the variability is still unaccounted for.
+
+- [F-test](https://en.wikipedia.org/wiki/F-test) An F-test is any statistical test in which the test statistic has an F-distribution under the null hypothesis whose shape depends on degree of freedom. The F test statistic is the ratio
+of two independent chi-squared variables divided by their degrees of freedom. It is most often used when comparing statistical models that have been fitted to a data set, in order to identify the model that best fits the population from which the data were sampled. 
+
+- [ANOVA](https://people.richland.edu/james/lecture/m170/ch13-1wy.html) Image a table with k columns of variables (between grou variation) and N  rows of samples (within group variation).
+There is the between group variation and the within group variation. If the variance caused by the interaction between the samples is much larger when compared to the variance that appears within each group, then it is because the means aren't the same.
+
+The F-distribution is the distribution under null hypothesis in the analysis of variance (ANOVA), 
+In this case degree of freedom is (k-1) for mean-squared error between groups, s_b^2  and (N-k) for the variance due to the differences within individual samples, denoted s_w^2  (Mean Square Within groups). This is the within group variation divided by its degrees of freedom (N-k). F = s_b^2 / s_w^2. The F test statistic is found by dividing the between group variance by the within group variance. The degrees of freedom for the numerator are the degrees of freedom for the between group (k-1) and the degrees of freedom for the denominator are the degrees of freedom for the within group (N-k).
+
+
 - [p-value](https://en.wikipedia.org/wiki/P-value)
 - [Degrees of Freedom](https://en.wikipedia.org/wiki/Degrees_of_freedom_(statistics))
 - [Interquartile range](https://en.wikipedia.org/wiki/Interquartile_range) Building block of box plot.
