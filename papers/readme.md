@@ -28,6 +28,7 @@ clear introduction to Markov Procceses.
 
   - [Comparison of Calibration of Classifiers](https://scikit-learn.org/stable/auto_examples/calibration/plot_compare_calibration.html#id2)
 
+- [Outlier Detection](http://www.eng.tau.ac.il/~bengal/outlier.pdf), by Irad Ben-Gal.
 ## B-list
 - [Degrees of Freedom](http://www.nohsteachers.info/pcaso/ap_statistics/PDFs/DegreesOfFreedom.pdf) by Helen M. Waler. 
 Presents t-statistic as a ratio of two circles on a plane in N dimensional space. Numerator is sample_mean - population_mean 
