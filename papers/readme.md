@@ -1,6 +1,10 @@
 # Data science Papers
 A collection of papers and supporting material.
 
+- [Least Squares Quantization in PCM](http://www-evasion.imag.fr/people/Franck.Hetroy/Teaching/ProjetsImage/2007/Bib/lloyd-1982.pdf) By SP Lloyd. First time k-means clustering was described (Voronoi tiling). PCM is Pulse Code Modulation.PCM converts an analog input to a digital output. It's an Analog to Digital (A/D) converter.
+  - [ECE789 Chapter 2](https://web.njit.edu/~shi/courses/ECE789/ch2.pdf)
+  Good lecture notes frow New Jersey Information Services and Technology on advanced statisical image processing with many tie-ins to data science. Chapter 2 describes PCM quantization and it's statistical analysis.
+
 - [Predicting Good Probabilities with Supervised Learning](https://www.cs.cornell.edu/~alexn/papers/calibration.icml05.crc.rev3.pdf)
 Paper by Alexandru Niculescu-Mizil and Rich Caruana from Cornell. 
 Good overview of log-loss (the idea of mis-classifying labeled data).
