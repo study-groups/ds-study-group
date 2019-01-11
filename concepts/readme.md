@@ -1,6 +1,9 @@
 # Data Science Concepts
 
 ## Statistics
+
+[Maximum Likelihood Estimation](https://towardsdatascience.com/a-gentle-introduction-to-maximum-likelihood-estimation-9fbff27ea12f). "In statistics, maximum likelihood estimation (MLE) is a method of estimating the parameters of a statistical model given observations, by finding the parameter values that maximize the likelihood of making the observations given the parameters. MLE can be seen as a special case of the maximum a posteriori estimation (MAP) that assumes a uniform prior distribution of the parameters, or as a variant of the MAP that ignores the prior and which therefore is unregularized."
+
 - [p-value](https://en.wikipedia.org/wiki/P-value) The p-value is used in the context of null hypothesis testing in order to quantify the idea of statistical significance of evidence. A claim is assumed valid if its counter-claim is improbable. That is, a low p-value means it was unlikely predicted value was by chance. Conversely, given high p-value, we rejectthe null hypothesis implies that the correct hypothesis lies in the logical complement of the null hypothesis. However, unless there is a single alternative to the null hypothesis, the rejection of null hypothesis does not tell us which of the alternatives might be the correct one.
 
 - [One and Two Tailed Tests](https://stats.idre.ucla.edu/other/mult-pkg/faq/general/faq-what-are-the-differences-between-one-tailed-and-two-tailed-tests/) The default among statistical packages performing tests is to report two-tailed p-values.  Because the most commonly used test statistic distributions (standard normal, Student’s t) are symmetric about zero, most one-tailed p-values can be derived from the two-tailed p-values.
