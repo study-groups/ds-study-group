@@ -7,6 +7,8 @@ A collection of papers and supporting material.
   - [EE 398 Quantization notes](https://web.stanford.edu/class/ee398a/handouts/lectures/05-Quantization.pdf). Bernd Girod's 
   class at Stanford. Great techncal explanation of Lloyd's algorithm (the basis of k-means clustering).
 
+- [large-scale-curiosity](https://pathak22.github.io/large-scale-curiosity/). Popular paper in 2018. "Reinforcement learning algorithms rely on carefully engineering environment rewards that are extrinsic to the agent. However, annotating each environment with hand-designed, dense rewards is not scalable, motivating the need for developing reward functions that are intrinsic to the agent. Curiosity is a type of intrinsic reward function which uses prediction error as reward signal."
+
 - [Predicting Good Probabilities with Supervised Learning](https://www.cs.cornell.edu/~alexn/papers/calibration.icml05.crc.rev3.pdf)
 Paper by Alexandru Niculescu-Mizil and Rich Caruana from Cornell. 
 Good overview of log-loss (the idea of mis-classifying labeled data).
