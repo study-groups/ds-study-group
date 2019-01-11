@@ -1,9 +1,11 @@
 # Data science Papers
 A collection of papers and supporting material.
 
-- [Least Squares Quantization in PCM](http://www-evasion.imag.fr/people/Franck.Hetroy/Teaching/ProjetsImage/2007/Bib/lloyd-1982.pdf) By SP Lloyd. First time k-means clustering was described (Voronoi tiling). PCM is Pulse Code Modulation.PCM converts an analog input to a digital output. It's an Analog to Digital (A/D) converter.
-  - [ECE789 Chapter 2](https://web.njit.edu/~shi/courses/ECE789/ch2.pdf)
+- [Least Squares Quantization in PCM](http://www-evasion.imag.fr/people/Franck.Hetroy/Teaching/ProjetsImage/2007/Bib/lloyd-1982.pdf). By SP Lloyd. First time k-means clustering was described (Voronoi tiling). PCM is Pulse Code Modulation.PCM converts an analog input to a digital output. It's an Analog to Digital (A/D) converter.
+  - [ECE789 Chapter 2](https://web.njit.edu/~shi/courses/ECE789/ch2.pdf).
   Good lecture notes frow New Jersey Information Services and Technology on advanced statisical image processing with many tie-ins to data science. Chapter 2 describes PCM quantization and it's statistical analysis.
+  - [EE 398 Quantization notes](https://web.stanford.edu/class/ee398a/handouts/lectures/05-Quantization.pdf). Bernd Girod's 
+  class at Stanford. Great techncal explanation of Lloyd's algorithm (the basis of k-means clustering).
 
 - [Predicting Good Probabilities with Supervised Learning](https://www.cs.cornell.edu/~alexn/papers/calibration.icml05.crc.rev3.pdf)
 Paper by Alexandru Niculescu-Mizil and Rich Caruana from Cornell. 
