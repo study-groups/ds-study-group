@@ -85,7 +85,12 @@ For training this model, we use a technique called Expectation Maximization.
 
 ## Random Forest
 - [Hyperparameter Tuning the Random Forest in Python](https://towardsdatascience.com/hyperparameter-tuning-the-random-forest-in-python-using-scikit-learn-28d2aa77dd74)
-
+- [CPSC540 Machine Learning at University of British Columbia](https://www.cs.ubc.ca/~nando/540-2013/)
+ - [Machine Learning: a Probabilistic Perspective] (https://www.cs.ubc.ca/~murphyk/MLbook/index.html) by Kevin Patrick Murphy
+ - [Decision Tree lecture at](https://www.cs.ubc.ca/~nando/540-2013/lectures/l8.pdf)
+ - [Random Forest](https://www.cs.ubc.ca/~nando/540-2013/lectures/l9.pdf)
+- [Machine learning - Random forests YouTube lecture](https://www.youtube.com/watch?v=3kYujfDgmNk)
+ 
 ## PCA
 - [Tutorial on Principal Component Analysis](https://arxiv.org/pdf/1404.1100.pdf)
 - [PCA on Quora](https://www.quora.com/What-is-the-difference-between-PCA-and-SVD)
@@ -96,6 +101,9 @@ for nominal categorical data, used to detect and represent underlying structures
 in a data set. It does this by representing data as points in a low-dimensional Euclidean space. 
 - [What is the intuitive relationship between SVD 
   and PCA?](https://math.stackexchange.com/questions/3869/what-is-the-intuitive-relationship-between-svd-and-pca)
+
+## Data Analtics
+- [Exploratory Data Analysis - Principles of Graphics](https://www.youtube.com/watch?v=YcHAPmDL_wQ). Video from Open Education Lab.
 
 ## Data simulation
 - [Simulate Regression Model](https://blogs.sas.com/content/iml/2017/01/25/simulate-regression-model-sas.html)
