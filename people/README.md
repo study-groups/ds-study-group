@@ -4,3 +4,5 @@
 
 - [Jean-Paul Benzécri](https://en.wikipedia.org/wiki/Jean-Paul_Benz%C3%A9cri) - inventor of correspondence analysis a statitscal technique for analyzing contingency 
 tables. Wrote L'Analysis Des Donnees. Here is a history of [Geometric Data Analysis](http://www.skeptron.uu.se/broady/sec/p-le-roux-brigitte-120903-gda-intro.pdf).
+
+- [Patrick Suppes](https://en.wikipedia.org/wiki/Patrick_Suppes). Stanford pioneer in computer-aided learning and decision theory.
