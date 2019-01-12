@@ -77,10 +77,16 @@ All data should be on the same scale for CA to be applicable, keeping in mind th
   analysis is a data science tool for summarizing tables. This post explains the basics of how it works. 
   It focuses on how to understand the underlying logic without entering into an explanation of the actual math.
 
+- [Geometric Data Analysis](https://en.wikipedia.org/wiki/Geometric_data_analysis) comprises geometric aspects of image analysis, pattern analysis and shape analysis or the approach of multivariate statistics that treats arbitrary data sets as clouds of points in n-dimensional space.
+
+  - [Slides on GDA](../slides/gda-le-roux-slides.pdf) which 
+    show the connction between PCA, MCA and GDA.
+    
 - [Multiple correspondence analysis](https://en.wikipedia.org/wiki/Multiple_correspondence_analysis)
 In statistics, multiple correspondence analysis (MCA) is a data analysis technique 
 for nominal categorical data, used to detect and represent underlying structures 
 in a data set. It does this by representing data as points in a low-dimensional Euclidean space. 
+
 
 - [Tutorial on Principal Component Analysis](https://arxiv.org/pdf/1404.1100.pdf)
 - [PCA on Quora](https://www.quora.com/What-is-the-difference-between-PCA-and-SVD)
