@@ -1,10 +1,7 @@
 # Data Science Concepts
 
 ## Statistics
-- [Correspondence Analysis](https://www.mathematica-journal.com/2010/09/an-introduction-to-correspondence-analysis/). "Cross tabulations (also known as cross tabs, or contingency tables) often arise in data analysis, whenever data can be placed into two distinct sets of categories. In market research, for example, we might categorize purchases of a range of products made at selected locations; or in medical testing, we might record adverse drug reactions according to symptoms and whether the patient received the standard or placebo treatment."
-
-
-https://www.mathematica-journal.com/2010/09/an-introduction-to-correspondence-analysis/- [Omnibus test](https://en.wikipedia.org/wiki/Omnibus_test). Omnibus tests are a kind of statistical test. They test whether the explained variance in a set of data is significantly greater than the unexplained variance, overall. One example is the F-test in the analysis of variance. 
+- [Omnibus test](https://en.wikipedia.org/wiki/Omnibus_test). Omnibus tests are a kind of statistical test. They test whether the explained variance in a set of data is significantly greater than the unexplained variance, overall. One example is the F-test in the analysis of variance. 
 - [Akaike information criterion (AIC)](https://en.wikipedia.org/wiki/Akaike_information_criterion)The Akaike information criterion (AIC) is an estimator of the relative quality of statistical models for a given set of data. Given a collection of models for the data, AIC estimates the quality of each model, relative to each of the other models. Thus, AIC provides a means for model selection.
 
 - [Maximum Likelihood Estimation](https://towardsdatascience.com/a-gentle-introduction-to-maximum-likelihood-estimation-9fbff27ea12f). "In statistics, maximum likelihood estimation (MLE) is a method of estimating the parameters of a statistical model given observations, by finding the parameter values that maximize the likelihood of making the observations given the parameters. MLE can be seen as a special case of the maximum a posteriori estimation (MAP) that assumes a uniform prior distribution of the parameters, or as a variant of the MAP that ignores the prior and which therefore is unregularized."
@@ -99,14 +96,19 @@ For training this model, we use a technique called Expectation Maximization.
  - [Random Forest](https://www.cs.ubc.ca/~nando/540-2013/lectures/l9.pdf)
 - [Machine learning - Random forests YouTube lecture](https://www.youtube.com/watch?v=3kYujfDgmNk)
  
-## PCA
-- [Tutorial on Principal Component Analysis](https://arxiv.org/pdf/1404.1100.pdf)
-- [PCA on Quora](https://www.quora.com/What-is-the-difference-between-PCA-and-SVD)
-- [PCA For categorical features](https://stackoverflow.com/questions/40795141/pca-for-categorical-features)
+## Dimension reduction
+
+- [Correspondence Analysis](https://www.mathematica-journal.com/2010/09/an-introduction-to-correspondence-analysis/). "Cross tabulations (also known as cross tabs, or contingency tables) often arise in data analysis, whenever data can be placed into two distinct sets of categories. In market research, for example, we might categorize purchases of a range of products made at selected locations; or in medical testing, we might record adverse drug reactions according to symptoms and whether the patient received the standard or placebo treatment."
+
 - [Multiple correspondence analysis](https://en.wikipedia.org/wiki/Multiple_correspondence_analysis)
 In statistics, multiple correspondence analysis (MCA) is a data analysis technique 
 for nominal categorical data, used to detect and represent underlying structures 
 in a data set. It does this by representing data as points in a low-dimensional Euclidean space. 
+
+- [Tutorial on Principal Component Analysis](https://arxiv.org/pdf/1404.1100.pdf)
+- [PCA on Quora](https://www.quora.com/What-is-the-difference-between-PCA-and-SVD)
+- [PCA For categorical features](https://stackoverflow.com/questions/40795141/pca-for-categorical-features)
+
 - [What is the intuitive relationship between SVD 
   and PCA?](https://math.stackexchange.com/questions/3869/what-is-the-intuitive-relationship-between-svd-and-pca)
 
