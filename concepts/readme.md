@@ -98,7 +98,11 @@ For training this model, we use a technique called Expectation Maximization.
  
 ## Dimension reduction
 
-- [Correspondence Analysis](https://www.mathematica-journal.com/2010/09/an-introduction-to-correspondence-analysis/). "Cross tabulations (also known as cross tabs, or contingency tables) often arise in data analysis, whenever data can be placed into two distinct sets of categories. In market research, for example, we might categorize purchases of a range of products made at selected locations; or in medical testing, we might record adverse drug reactions according to symptoms and whether the patient received the standard or placebo treatment."
+- [Correspondence Analysis](https://en.wikipedia.org/wiki/Correspondence_analysis).
+All data should be on the same scale for CA to be applicable, keeping in mind that the method treats rows and columns equivalently. It is traditionally applied to contingency tables — CA decomposes the chi-squared statistic associated with this table into orthogonal factors.
+
+  - [Intro to CA](https://www.mathematica-journal.com/2010/09/an-introduction-to-correspondence-analysis/).
+ "Cross tabulations (also known as cross tabs, or contingency tables) often arise in data analysis, whenever data can be placed into two distinct sets of categories. In market research, for example, we might categorize purchases of a range of products made at selected locations; or in medical testing, we might record adverse drug reactions according to symptoms and whether the patient received the standard or placebo treatment." 
 
 - [Multiple correspondence analysis](https://en.wikipedia.org/wiki/Multiple_correspondence_analysis)
 In statistics, multiple correspondence analysis (MCA) is a data analysis technique 
