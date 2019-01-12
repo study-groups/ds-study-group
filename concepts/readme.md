@@ -64,7 +64,32 @@ how to model multivariate data with a Gaussian Mixture Model.
 For training this model, we use a technique called Expectation Maximization.
 - [Cross Entropy](https://en.wikipedia.org/wiki/Cross_entropy) In information theory, the cross entropy between two probability distributions {\displaystyle p} p and {\displaystyle q} q over the same underlying set of events measures the average number of bits needed to identify an event drawn from the set, if a coding scheme is used that is optimized for an "artificial" probability distribution {\displaystyle q} q, rather than the "true" distribution {\displaystyle p} p.
   -Related to [Kullback-Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence)
-  
+
+## Dimension reduction
+
+- [Correspondence Analysis](https://en.wikipedia.org/wiki/Correspondence_analysis).
+All data should be on the same scale for CA to be applicable, keeping in mind that the method treats rows and columns equivalently. It is traditionally applied to contingency tables — CA decomposes the chi-squared statistic associated with this table into orthogonal factors.
+
+  - [Intro to CA](https://www.mathematica-journal.com/2010/09/an-introduction-to-correspondence-analysis/).
+ "Cross tabulations (also known as cross tabs, or contingency tables) often arise in data analysis, whenever data can be placed into two distinct sets of categories. In market research, for example, we might categorize purchases of a range of products made at selected locations; or in medical testing, we might record adverse drug reactions according to symptoms and whether the patient received the standard or placebo treatment." 
+ 
+  - [How Correspondence analysis works](https://www.displayr.com/how-correspondence-analysis-works/) Correspondence 
+  analysis is a data science tool for summarizing tables. This post explains the basics of how it works. 
+  It focuses on how to understand the underlying logic without entering into an explanation of the actual math.
+
+- [Multiple correspondence analysis](https://en.wikipedia.org/wiki/Multiple_correspondence_analysis)
+In statistics, multiple correspondence analysis (MCA) is a data analysis technique 
+for nominal categorical data, used to detect and represent underlying structures 
+in a data set. It does this by representing data as points in a low-dimensional Euclidean space. 
+
+- [Tutorial on Principal Component Analysis](https://arxiv.org/pdf/1404.1100.pdf)
+- [PCA on Quora](https://www.quora.com/What-is-the-difference-between-PCA-and-SVD)
+- [PCA For categorical features](https://stackoverflow.com/questions/40795141/pca-for-categorical-features)
+
+- [What is the intuitive relationship between SVD 
+  and PCA?](https://math.stackexchange.com/questions/3869/what-is-the-intuitive-relationship-between-svd-and-pca)
+
+
 ## Bayesian
 - [Bayesian_inference](https://en.wikipedia.org/wiki/Bayesian_inference)
 - [Conjugate priors](https://en.wikipedia.org/wiki/Conjugate_prior)
@@ -95,26 +120,7 @@ For training this model, we use a technique called Expectation Maximization.
  - [Decision Tree lecture at](https://www.cs.ubc.ca/~nando/540-2013/lectures/l8.pdf)
  - [Random Forest](https://www.cs.ubc.ca/~nando/540-2013/lectures/l9.pdf)
 - [Machine learning - Random forests YouTube lecture](https://www.youtube.com/watch?v=3kYujfDgmNk)
- 
-## Dimension reduction
 
-- [Correspondence Analysis](https://en.wikipedia.org/wiki/Correspondence_analysis).
-All data should be on the same scale for CA to be applicable, keeping in mind that the method treats rows and columns equivalently. It is traditionally applied to contingency tables — CA decomposes the chi-squared statistic associated with this table into orthogonal factors.
-
-  - [Intro to CA](https://www.mathematica-journal.com/2010/09/an-introduction-to-correspondence-analysis/).
- "Cross tabulations (also known as cross tabs, or contingency tables) often arise in data analysis, whenever data can be placed into two distinct sets of categories. In market research, for example, we might categorize purchases of a range of products made at selected locations; or in medical testing, we might record adverse drug reactions according to symptoms and whether the patient received the standard or placebo treatment." 
-
-- [Multiple correspondence analysis](https://en.wikipedia.org/wiki/Multiple_correspondence_analysis)
-In statistics, multiple correspondence analysis (MCA) is a data analysis technique 
-for nominal categorical data, used to detect and represent underlying structures 
-in a data set. It does this by representing data as points in a low-dimensional Euclidean space. 
-
-- [Tutorial on Principal Component Analysis](https://arxiv.org/pdf/1404.1100.pdf)
-- [PCA on Quora](https://www.quora.com/What-is-the-difference-between-PCA-and-SVD)
-- [PCA For categorical features](https://stackoverflow.com/questions/40795141/pca-for-categorical-features)
-
-- [What is the intuitive relationship between SVD 
-  and PCA?](https://math.stackexchange.com/questions/3869/what-is-the-intuitive-relationship-between-svd-and-pca)
 
 ## Data Analtics
 - [Exploratory Data Analysis - Principles of Graphics](https://www.youtube.com/watch?v=YcHAPmDL_wQ). Video from Open Education Lab.
