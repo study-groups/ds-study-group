@@ -20,6 +20,9 @@ Papers and books that are tractable to the invention of their subject.
 
 # Software
 
+## Git
+- [Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
+
 ## Python
 - [ds-study-group-examples](./python)
 - [Python for Everybody](http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf)
