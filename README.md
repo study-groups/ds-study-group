@@ -34,3 +34,6 @@ Papers and books that are tractable to the invention of their subject.
 - [Datacamp tutorial](https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python)
 - [Data analysis in Python with Pandas](https://www.youtube.com/playlist?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y): by Kevin Markum. Learn how to use the pandas library for data analysis, manipulation, and visualization. Each video answers a student question using a real dataset, which is available online so you can follow along! 
 
+## Resources
+- [Chris Albon's extensive list of data science resources.](https://chrisalbon.com/)
+
