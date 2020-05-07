@@ -77,5 +77,19 @@ Python and statistics.
 - Generative adverserial networks (GANs ala Ian Goodfellow)
 
 ## Resources
+
+### Online courses
+- [CS230 Deep Learning at Stanford by Adrew Ng](https://cs230.stanford.edu/syllabus/): Dr. Ng is great. Founder of Coursea.
+- [Stanford NLP](http://web.stanford.edu/class/cs224n/): Christopher Mannering et. al at Stanford.
+
+### Projects
+- [ds-projects](https://github.com/study-groups/ds-projects): Boot camp capstone projects.
+- [Harvard NLP](https://nlp.seas.harvard.edu/code/) Collection of code and papers at Havard.
+
+### Blogs
 - [Chris Albon's extensive list of data science resources.](https://chrisalbon.com/)
+
+### Data Sets
+- [U.S. Bureau of Labor Statistics](https://www.bls.gov/)
+- [Interesting Kaggle competitions](./kaggle/readme.md)
 
