@@ -6,12 +6,13 @@ The three legs of data science:
 
 ## DevOps
 - [Python Resources](./python): Various aspects about the Python programming ecosystem including Pandas, Scikit Learn, TensorFlow and Torch.
-- [Colab](https://colab.research.google.com/notebooks/intro.ipynb)
+- [Colab](https://colab.research.google.com/notebooks/intro.ipynb): olaboratory, or "Colab" for short, allows you to write and execute Python in your browser, with Zero configuration required Free access to GPUs. Jake Vanderplus video introduction to [Colab](https://www.youtube.com/watch?v=inN8seMm7UI).
+
 - [DevOps Study Group](https://github.com/study-groups/devops-study-group): DevOps study group which touches on various aspects computer management. Useful for deploying projects. 
 - [DataOps Study Group](https://github.com/study-groups/dataops-study-group): study group about big data.
-- [GitHub](https://github.com/)
-- [GitLab](https://about.gitlab.com/)
-- [GitPod](https://www.gitpod.io/)
+- [GitHub](https://github.com/): defacto cloud storage for code.
+- [GitLab](https://about.gitlab.com/): competition to GitHub. GitLab has beter [CI/CD](https://docs.gitlab.com/ee/ci/).
+- [GitPod](https://www.gitpod.io/): VS Code in the cloud that works directly with Git repositories on GitLab or GitHub.
 
 ## Statistics
 - [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA) Jake Vanderplus's nice bridge between
@@ -46,9 +47,10 @@ unlearn.*
 - [Regression Methods at Penn State (Stat 501)](https://newonlinecourses.science.psu.edu/stat501/)
 - [Statistical Thinking and Data Analysis by Cynthia Rudin](https://ocw.mit.edu/courses/sloan-school-of-management/15-075j-statistical-thinking-and-data-analysis-fall-2011/index.htm)
 
-## Machine Learning
 - [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA) Jake Vanderplus's nice bridge between
 Python and statistics.
+
+## Machine Learning
 
 ### Supervised learning (labeled data) topics
 - Linear regression
