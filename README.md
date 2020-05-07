@@ -4,18 +4,15 @@ The three legs of data science:
 2. **Statistics** (random variables, pdf, central moments, conditional probability, CLT, null hypothesis)
 3. **Machine Learning** (linear regression, logistic regression, clusterting, dimension reduction, decision trees, MLP, back-prop, NLP, GAN)
 
-## Devops for data science 
-1. Lanaguage details and managing runtime envirornments 
-- [Data Science From Scratch](https://github.com/joelgrus/data-science-from-scratch) by Joel Grus. Joel is no-nonsense, clear and concise. 
-  - Here he is living coding a full deep learning (back-prop, multi-layer perceptron network) in less than an hour: [Joel Grus - Livecoding Madness - Let's Build a Deep Learning Library](https://www.youtube.com/watch?v=o64FV-ez6Gw) 
-  
-- [Python Study Group](https://github.com/study-groups/python-study-group}: Various aspects about the Python programming ecosystem.
-2. Libraries
-3. Deployment
-  - [Devops Study Group](https://github.com/study-groups/devops-study-group}: DevOps study group which touches on various aspects computer management. Useful for deploying projects. 
-  - [git](https://git-scm.com/): Git is version control for software development, written by Linus Torvoldas.
-
+## DevOps
+- [Python Study Group](https://github.com/study-groups/python-study-group): Various aspects about the Python programming ecosystem including Pandas, Scikit Learn, TensorFlow and Torch.
+- [DevOps Study Group](https://github.com/study-groups/devops-study-group): DevOps study group which touches on various aspects computer management. Useful for deploying projects. 
+- [DataOps Study Group](https://github.com/study-groups/dataops-study-group): study group about big data.
+ 
 ## Statistics
+- [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA) Jake Vanderplus's nice bridge between
+Python and statistics.
+
 - [Probability Theory and Mathematical Statistics at Penn State (Stat 414/415)](https://onlinecourses.science.psu.edu/stat414/)
   - In Section 1, one of our primary focuses will be to develop an understanding of the various ways in which we can assign a probability to some chance event. We'll also learn the fundamental properties of probability, investigate how probability behaves, and learn how to calculate the probability of a new chance event.
 
@@ -27,6 +24,8 @@ The three legs of data science:
   
   - Finally, in Section 5, as the name of this section suggests, we will spend some time learning how to find the probability distribution of functions of random variables. For example, we might know the probability density function of X, but want to know instead the probability density function of X2. We'll learn several different techniques for finding the distribution of functions of random variables, including the distribution function technique, the change-of-variable technique and the moment-generating function technique. The more important functions of random variables that we'll explore will be those involving random variables that are independent and identically distributed. 
 
+
+### Advanced Statistics
 - [Introduction to the Theory of Random Signals and Noise](https://archive.org/details/IntrductionToTheTheoryOfRandomSignalsAndNoise/page/n377/mode/2up): First 5 chapters of 
 Davenport and Root's book properly describe what a random variable is. In the parlance of modern data science, a **random 
 variable** is the name of a **column** in a data set and a **row** in a data set is an **event**. Note taht an event 
@@ -39,25 +38,9 @@ where inference is needed.† A previous acquaintance with probability and stati
 indeed, a certain amount of innocence in this area may be desirable, because there will be less to
 unlearn.*
 
-### Advanced Statistics
 - [Applied Statistics at Penn State (Stat 500)](https://newonlinecourses.science.psu.edu/statprogram/stat500)
 - [Regression Methods at Penn State (Stat 501)](https://newonlinecourses.science.psu.edu/stat501/)
 - [Statistical Thinking and Data Analysis by Cynthia Rudin](https://ocw.mit.edu/courses/sloan-school-of-management/15-075j-statistical-thinking-and-data-analysis-fall-2011/index.htm)
-
-
-## Git
-- [Git Tutorial for Beginners: Command-Line Fundamentals](https://www.youtube.com/watch?v=HVsySz-h9r4)
-
-## Python
-- [ds-study-group-examples](./python)
-- [Python for Everybody](http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf)
-- [Dive into Python](http://getpython3.com/diveintopython3/table-of-contents.html) (Pdf version [here](http://histo.ucsf.edu/BMS270/diveintopython3-r802.pdf).)
-
-## Pandas
-- [10 min to Pandas](https://pandas.pydata.org/pandas-docs/stable/10min.html)
-- [Dataquest tutorial](https://www.dataquest.io/blog/pandas-python-tutorial/)
-- [Datacamp tutorial](https://www.datacamp.com/community/tutorials/pandas-tutorial-dataframe-python)
-- [Data analysis in Python with Pandas](https://www.youtube.com/playlist?list=PL5-da3qGB5ICCsgW1MxlZ0Hq8LL5U3u9y): by Kevin Markum. Learn how to use the pandas library for data analysis, manipulation, and visualization. Each video answers a student question using a real dataset, which is available online so you can follow along! 
 
 ## Resources
 - [Chris Albon's extensive list of data science resources.](https://chrisalbon.com/)
