@@ -5,11 +5,10 @@ The three legs of data science:
 3. **Machine Learning** (linear regression, logistic regression, clusterting, dimension reduction, decision trees, MLP, back-prop, NLP, GAN)
 
 ## DevOps
-- [Python Study Group](https://github.com/study-groups/python-study-group): Various aspects about the Python programming ecosystem including Pandas, Scikit Learn, TensorFlow and Torch.
+- [Python Resources](./python): Various aspects about the Python programming ecosystem including Pandas, Scikit Learn, TensorFlow and Torch.
+- [Colab](https://colab.research.google.com/notebooks/intro.ipynb)
 - [DevOps Study Group](https://github.com/study-groups/devops-study-group): DevOps study group which touches on various aspects computer management. Useful for deploying projects. 
 - [DataOps Study Group](https://github.com/study-groups/dataops-study-group): study group about big data.
-- [Colab](https://colab.research.google.com/notebooks/intro.ipynb)
-- [Google Cloud Platform](https://cloud.google.com/)
 - [GitHub](https://github.com/)
 - [GitLab](https://about.gitlab.com/)
 - [GitPod](https://www.gitpod.io/)
