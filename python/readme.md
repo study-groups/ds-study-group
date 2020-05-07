@@ -20,9 +20,10 @@ Start with the [Python documentation](https://docs.python.org/3/). There you wil
 
 - [Data Science From Scratch](https://github.com/joelgrus/data-science-from-scratch) by Joel Grus. Joel is no-nonsense, clear and concise. 
   - [Joel Grus - Livecoding Madness - Let's Build a Deep Learning Library](https://www.youtube.com/watch?v=o64FV-ez6Gw): living coding a full deep learning (back-prop, multi-layer perceptron network) in less than an hour, good stuff.
-  
-## Libraries
- - **Matplotlib**
+
+## Packages
+
+- **Matplotlib**
    - [Matplotlib](https://matplotlib.org/): Comprehensive library for 
  creating static, animated, and interactive visualizations in Python. 
 
@@ -35,17 +36,15 @@ Start with the [Python documentation](https://docs.python.org/3/). There you wil
 - **Scikit Learn*
   - [Scikit Learn home page](https://scikit-learn.org/stable/)
   
- -[TensorFlow Guide](https://www.tensorflow.org/): the guide for 2.0.
+ - [TensorFlow Guide](https://www.tensorflow.org/): the guide for 2.0.
    -[TensorFlow example in Colab](https://www.tensorflow.org/tutorials/quickstart/beginner): TensorFlow2.0 + keras 
    is place to start.
    
- -[PyTorch deep_learning_60min_blit](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html):
+ - [PyTorch deep_learning_60min_blit](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html):
 
-## Digging deeper
+### Digging deeper
+
 - [statsmodel](https://www.statsmodels.org/stable/index.html): is a Python module that provides classes and functions for the estimation of many different statistical models, as well as for conducting statistical tests, and statistical data exploration. It is the geeky cousin to scikit-learn. Good for learnig 
-
-- [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA) Jake Vanderplus's nice bridge between
-Python and statistics.
 
 - [type annotations]{https://docs.python.org/3/library/typing.html} are good.
 
@@ -53,8 +52,6 @@ Python and statistics.
 (meaning of statements, not it's syntax).
 [Whrilwind Tour Of Python])https://jakevdp.github.io/WhirlwindTourOfPython/03-semantics-variables.html).
 
-## Resources
-
-## Python
+## Python resources
 - [Python for Everybody](http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf)
 - [Dive into Python](http://getpython3.com/diveintopython3/table-of-contents.html) (Pdf version [here](http://histo.ucsf.edu/BMS270/diveintopython3-r802.pdf).)
