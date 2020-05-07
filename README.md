@@ -46,6 +46,34 @@ unlearn.*
 - [Regression Methods at Penn State (Stat 501)](https://newonlinecourses.science.psu.edu/stat501/)
 - [Statistical Thinking and Data Analysis by Cynthia Rudin](https://ocw.mit.edu/courses/sloan-school-of-management/15-075j-statistical-thinking-and-data-analysis-fall-2011/index.htm)
 
+## Machine Learning
+- [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA) Jake Vanderplus's nice bridge between
+Python and statistics.
+
+### Supervised learning (labeled data) topics
+- Linear regression
+- Multi-dimensional linear regression
+- Statsmodel analysis of variance
+- Logistc regression
+- Stats: bias/variance trade-off
+- Stats: Receiver Operator Characteristc
+- Math: Vector algebra
+- Back prop over squared error surface
+- Multiple Layer Preceptrons
+- Math: Tensors (TensorFlow and PyTorch)
+- Image classifciation
+
+### Unsupervised learning via clustering
+- High dimensional data => correlated data
+- Dimensionality reduction via Singular Value Decompostion
+- One hot encoding of natural language
+- Embedding spaces for latent variables
+- Sequential encoding via long, short term memory (LSTM)
+
+### Semi-supervised competitive models
+- Generative Pre-trained Transformers (GPT-2 ala Joel Grus)
+- Generative adverserial networks (GANs ala Ian Goodfellow)
+
 ## Resources
 - [Chris Albon's extensive list of data science resources.](https://chrisalbon.com/)
 
