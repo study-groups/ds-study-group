@@ -1,16 +1,25 @@
 # ds-study-group
 The three legs of data science:
-1. **DevOps** (unix, python, pandas, scikit-learn, matplotlib, jupyter, git, github) 
+1. **DevOps** (Unix, Python, Pandas, Scikit-learn, Matplotlib, Jupyter, Git, Github) 
 2. **Statistics** (random variables, pdf, central moments, conditional probability, CLT, null hypothesis)
 3. **Machine Learning** (linear regression, logistic regression, clusterting, dimension reduction, decision trees, MLP, back-prop, NLP, GAN)
 
 ## DevOps
+- [The Linux command line for beginner](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview): This tutorial will teach you a little of the history of the command line, then walk you through some practical excercises to become familiar with a few basic commands and concepts. 
+
+- [Git](https://git-scm.com/): Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
 - [Python Resources](./python): Various aspects about the Python programming ecosystem including Pandas, Scikit Learn, TensorFlow and Torch.
+
 - [Colab](https://colab.research.google.com/notebooks/intro.ipynb): olaboratory, or "Colab" for short, allows you to write and execute Python in your browser, with Zero configuration required Free access to GPUs. Jake Vanderplus video introduction to [Colab](https://www.youtube.com/watch?v=inN8seMm7UI).
 
+### Dig deeper
 - [DevOps Study Group](https://github.com/study-groups/devops-study-group): DevOps study group which touches on various aspects computer management. Useful for deploying projects. 
+
 - [DataOps Study Group](https://github.com/study-groups/dataops-study-group): study group about big data.
+
 - [GitHub](https://github.com/): defacto cloud storage for code.
+
 - [GitLab](https://about.gitlab.com/): competition to GitHub. GitLab has beter [CI/CD](https://docs.gitlab.com/ee/ci/).
 - [GitPod](https://www.gitpod.io/): VS Code in the cloud that works directly with Git repositories on GitLab or GitHub.
 
