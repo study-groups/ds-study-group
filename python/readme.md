@@ -55,3 +55,4 @@ Start with the [Python documentation](https://docs.python.org/3/). There you wil
 ## Python resources
 - [Python for Everybody](http://do1.dr-chuck.com/pythonlearn/EN_us/pythonlearn.pdf)
 - [Dive into Python](http://getpython3.com/diveintopython3/table-of-contents.html) (Pdf version [here](http://histo.ucsf.edu/BMS270/diveintopython3-r802.pdf).)
+- [Printing stings](https://realpython.com/python-string-formatting/): examples of f string.
