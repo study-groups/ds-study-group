@@ -24,6 +24,9 @@ The three legs of data science:
 - [GitPod](https://www.gitpod.io/): VS Code in the cloud that works directly with Git repositories on GitLab or GitHub.
 
 ## Statistics
+
+- [BIOS 735 - Introduction to Statistical Computing](https://biodatascience.github.io/statcomp/): by Michael Love and Naim Rashid. This class teaches important concepts and skills for statistical computing, numerical optimization, and machine learning using case studies. After this course, students will have a good understanding of the process of producing high-quality and sharable statistical programs (module 1, 3 weeks), algorithms for optimization and numerical integration (module 2, 6 weeks), and will be able to implement and apply some common and powerful machine learning methods (module 3, 3 weeks). Modules 1 and 3 were originally developed by Dr. Michael Love. [R based code](https://github.com/biodatascience/statcomp_src). 
+
 - [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA) Jake Vanderplus's nice bridge between
 Python and statistics.
 
