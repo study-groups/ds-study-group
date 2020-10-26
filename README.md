@@ -25,7 +25,6 @@ The three legs of data science:
 
 ## Statistics
 
-- [BIOS 735 - Introduction to Statistical Computing](https://biodatascience.github.io/statcomp/): by Michael Love and Naim Rashid. This class teaches important concepts and skills for statistical computing, numerical optimization, and machine learning using case studies. After this course, students will have a good understanding of the process of producing high-quality and sharable statistical programs (module 1, 3 weeks), algorithms for optimization and numerical integration (module 2, 6 weeks), and will be able to implement and apply some common and powerful machine learning methods (module 3, 3 weeks). Modules 1 and 3 were originally developed by Dr. Michael Love. [R based code](https://github.com/biodatascience/statcomp_src). 
 
 - [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA) Jake Vanderplus's nice bridge between
 Python and statistics.
@@ -43,6 +42,9 @@ Python and statistics.
 
 
 ### Advanced Statistics
+- [BIOS 735 - Introduction to Statistical Computing](https://biodatascience.github.io/statcomp/): by Michael Love and Naim Rashid. This class teaches important concepts and skills for statistical computing, numerical optimization, and machine learning using case studies. After this course, students will have a good understanding of the process of producing high-quality and sharable statistical programs (module 1, 3 weeks), algorithms for optimization and numerical integration (module 2, 6 weeks), and will be able to implement and apply some common and powerful machine learning methods (module 3, 3 weeks). Modules 1 and 3 were originally developed by Dr. Michael Love. [R based code](https://github.com/biodatascience/statcomp_src). 
+
+
 - [Introduction to the Theory of Random Signals and Noise](https://archive.org/details/IntrductionToTheTheoryOfRandomSignalsAndNoise/page/n377/mode/2up): First 5 chapters of 
 Davenport and Root's book properly describe what a random variable is. In the parlance of modern data science, a **random 
 variable** is the name of a **column** in a data set and a **row** in a data set is an **event**. Note taht an event 
