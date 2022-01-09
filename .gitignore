@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# pyenv environment, don't include
+ds-dev/
+
 # C extensions
 *.so
 
