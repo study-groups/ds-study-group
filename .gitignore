@@ -5,6 +5,7 @@ __pycache__/
 
 # pyenv environment, don't include
 ds-dev/
+log.txt
 
 # C extensions
 *.so

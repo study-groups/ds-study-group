@@ -21,5 +21,8 @@ Install notes
 ---
 https://virtualenv.pypa.io/en/latest/user_guide.html
 EOF
+}
 
+function dstool-activate(){
+  source server/ds-dev/bin/activate
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Data Science Web Server</title>
+
+
+<link rel= "stylesheet" 
+type= "text/css" 
+href= "ds/{{ url_for('static',filename='styles/mainpage.css') }}">
+
+<style>
+.body{
+background:#444;
+padding:2em;
+}
+</style>
+
+</head>
+
+<body>
+<h1>Data Science Web Server</h1>
+<ul>
+<li>
+<a href="ds/markdown&file=ds-study-group-readme.md">
+ds-study-group readme.md</a>
+</li>
+<li>
+<a href="./readme">
+./readme</a>
+</li>
+<li>
+<a href="./notes">./notes</a>
+</li>
+<li>
+<a href="./notes/ds-notes-2022.html">2022 Notes</a>
+</li>
+<li>
+Cross correlation of data
+</li>
+</ul>
+<div id="content" style="width:800px;height:500px">
+<canvas id="chart"></canvas>
+</div>
+
+<script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js">
+</script>
+</body>
+</html>
