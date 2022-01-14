@@ -15,7 +15,7 @@ Run
 # 2>&1  - redirct stderr (2) to stdout (1)
 # > log.txt - write stdout to file
 
-nohup python3 app.py > log.txt 2>&1 &
+nohup python3 app.py 9993 > log.txt 2>&1 &
 
 Notes
 ---
@@ -29,23 +29,28 @@ EOF
 # 2>&1  means redirect file descriptor 2 (stderr) to location of 1 (stdout)
 # & at the end tells the shell to start in the background
 function ds-server-start(){
-  nohup python3 app.py > log.txt 2>&1 &
+  port=${1:-9992}
+  appname="./ds-server.py"
+  #mkfifo ./logs/$port.fifo 
+  nohup python3 $appname $port > ./logs/$port.txt 2>&1 &
   ds_server_pid=$!
 }
 
 function ds-server-restart(){
   kill $ds_server_pid
-  ds-server-start
+  ds-server-start $DS_PORT
 }
 
 function ds-server-list(){
- ps -ef | grep app.py
+  ps -ef | grep "python3 ./ds-server.py" | grep -v grep # ignore the grep process 
 }
+
 function ds-server-kill(){
-  echo 'use "kill PID" where PID is left-most column of dstool-server-list'
+  echo 'assumes name starts with ds-server'
+  ps -ef | grep ds-server | grep -v grep | awk '{print $2}' | xargs kill $1
+
 }
 
                                                                                 
-function ds-activate(){                                                     
-  source ds-dev/bin/activate                                             
+function ds-server-activate(){                                                     source ds-dev/bin/activate                                             
 } 
