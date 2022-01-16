@@ -36,6 +36,21 @@ function ds-server-start(){
   ds_server_pid=$!
 }
 
+function ds-server-start-debug(){
+  port=${1:-9993}
+  appname="./ds-server.py"
+  #mkfifo ./logs/$port.fifo 
+  nohup python3 $appname $port -m debugpy \
+    --listen 0.0.0.0:5678 > ./logs/$port.txt 2>&1 &
+  ds_server_pid=$!
+}
+
+function ds-chrome-start-debug(){
+ google-chrome -remote-debugging-port=9222 \
+  --user-data-dir=~/remote-debug-profile
+
+}
+
 function ds-server-restart(){
   kill $ds_server_pid
   ds-server-start $DS_PORT
