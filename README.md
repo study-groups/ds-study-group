@@ -1,3 +1,6 @@
+### Todo
+- Review and integrate info at [Homemade Machine Learning](https://github.com/trekhleb/homemade-machine-learning).
+
 # ds-study-group
 The three legs of data science:
 1. **DevOps** (Unix, Python, Pandas, Scikit-learn, Matplotlib, Jupyter, Git, Github) 
