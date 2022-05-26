@@ -23,13 +23,18 @@ https://www.digitalocean.com/community/tutorials/how-to-use-templates-in-a-flask
 EOF
 }
 
-function dstool-server-start(){
-nohup python3 app.py > log.txt 2>&1 &
+dstool-jupyter-start(){
+   cd ~/src/ds-study-group/jupyter/
+   jupyter-lab 
+}
+dstool-server-start-nohup(){
+  nohup python3 app.py > log.txt 2>&1 &
 }
 
-function dstool-server-list(){
- ps -ef | grep app.py
+dstool-server-list(){
+ ps -ef | grep app.py | grep -v grep
 }
-function dstool-server-kill(){
+
+dstool-server-kill(){
   echo 'use "kill PID" where PID is left-most column of dstool-server-list'
 }
