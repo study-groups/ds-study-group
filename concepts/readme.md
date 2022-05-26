@@ -96,6 +96,24 @@ in a data set. It does this by representing data as points in a low-dimensional 
   and PCA?](https://math.stackexchange.com/questions/3869/what-is-the-intuitive-relationship-between-svd-and-pca)
 
 
+- ["Low Rank Tensor Methods in High Dimensional Data Analysis (](https://www.youtube.com/watch?v=K8t24xm7tn8&list=PLHyI3Fbmv0SeAB6ZmkwS3B6z7b1hXOhv9): Ming Yuan, Abstract: Large amount of multidimensional data in the form of multilinear arrays, or tensors, arise routinely in modern applications from such diverse fields as chemometrics, genomics, physics, psychology, and signal processing among many others. In this talk, I will review some of the recent progresses and discuss some of the present challenges. 
+
+
+## Genetics
+
+- [The Soil Microbiome – From Metagenomics to Metaphenomics](https://www.youtube.com/watch?v=Qfz1BDfkl4A&list=PLHyI3Fbmv0SdgmTnikCUcQHR-WXLs8Tp1): by Janet Jansson.
+
+- [Mystery and Genomics](https://www.youtube.com/watch?v=T9oqQOkW7V8&list=PLHyI3Fbmv0SdU6ozcj-6mqEPQz457E89r): distances between biological sequences by Lior Pachter, Cal Tech.
+
+- [Brian Browning - "An Introduction to Genotype Imputation"](https://www.youtube.com/watch?v=-oUvXXg6tl8&list=PLHyI3Fbmv0Sd763rgnjcgpG3EkFgdK-2b): 
+
+- [Computational Genomics at UCLA](http://computationalgenomics.bioinformatics.ucla.edu/resources/videos/): 
+
+## Optimization
+
+- [Introduction to Control Lyapunov Functions and Control Barrier Functions](https://www.youtube.com/watch?v=_Tkn_Hzo4AA): by [Jason Choi](https://jay-choi.me/).
+- [Why is it called the density matrix renormalization group?](https://www.youtube.com/watch?v=cxHZWm2gNQE): by Thomas Baker. Tensor networks are one strong candidate that have been extremely popular in solving models with local interactions [1,2].  These methods are motivated from a combination of information theory and renormalization group techniques.  They also naturally compute the entanglement of a given model, making them useful for studies of topological physics. In comparison with quantum Monte Carlo methods, they have no sign problem.  In comparison with exact diagonalization, the method circumvents the exponentially sized memory required and can be applied to hundreds or thousands of sites with a controlled error.
+
 ## Bayesian
 - [Bayesian_inference](https://en.wikipedia.org/wiki/Bayesian_inference)
 - [Conjugate priors](https://en.wikipedia.org/wiki/Conjugate_prior)

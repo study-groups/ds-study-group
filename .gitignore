@@ -3,8 +3,12 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+_build
+server/logs
+
 # pyenv environment, don't include
 ds-dev/
+log.txt
 
 # C extensions
 *.so

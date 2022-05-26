@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Data Science Web Server</title>
+    <link rel= "stylesheet" 
+        type= "text/css" 
+        href= ".{{ url_for('static',filename='styles/mainpage.css') }}">
+
+<style>
+html{
+  font-family:arial;
+  background:#eef;
+  color:#111;
+  padding:0 2em 2em 2em;
+}
+li{
+  line-height:140%;
+  margin: 1em 0em;
+}
+a{
+  text-decoration:none;
+  font-weight:bold;
+  color:#606;
+}
+
+#cli-container{
+  width:100%;
+  font-size:1.5rem;
+}
+#cli-status{
+  width:70%;
+  opacity:.6;
+  text-align:center;
+  font-size:1rem;
+}
+
+#cli-container input[type=text]{
+  line-height:2rem;
+  font-size:inherit;
+  width: 70%;
+  background:inherit;
+  border-radius:.5rem;
+}
+#cli-container input[type=submit]{
+  font-size:1.4rem;
+  border-radius:.5rem;
+}
+#header{
+  width:100%;
+  height:1.5em;
+  text-align:right;
+  font-size:.5em;
+}
+
+/* Desktop */
+@media only screen and (max-width: 600px){
+  html{
+    font-size:16pt;
+  }
+
+  body {
+    overflow:scroll;
+    position:static;
+    margin-bottom:2rem;
+    background:#aFa;
+  }
+}
+
+p{
+  margin-left:1.5em;
+  margin-right:1.5em;
+}
+</style>
+</head>
+<div id="header">
+  <a href="https://github.com/study-groups/ds-study-group">
+  Data science study group at GitHub</a>. <br>
+  Raw <a href="./markdown">markdown</a> rendered via ds-server.py. 
+</div>
+<body>
+
+<h1>Data Science Web Server</h1>
+
+<p> <a href="https://github.com/study-groups/ds-study-group/tree/main/server">ds-server</a> is a collection of data science 
+tools based around the command line interface. 
+See ds-server.sh for more info. </p>
+
+<ul>
+
+<li>
+  <a href="./notes">2022 Data science notes</a>
+</li>
+
+<li>
+  <div id="cli-container">
+    <form id="cliForm" method="POST">
+      <input id="cli-input" type="text" value="random"/>
+      <input type="submit" value="submit">
+    </form>
+    <div id="cli-status">cli status</div>
+  </div>
+</li>
+
+</ul>
+<div id="dashboard">
+  <div id="chartAWrapper" style="margin:auto; width:70%">
+    <canvas  id="chartA" style="width:800px;height:500px"></canvas>
+  </div>
+</div>
+
+<script 
+  src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js">
+</script>
+<script 
+  src="static/ds-dashboard.js">
+</script>
+<script>
+
+function handleCliSubmit(evt) {
+    evt.preventDefault();
+    let cliInput=document.getElementById("cli-input").value; 
+    let cliStatus=document.getElementById("cli-status"); 
+    let cliTokens=cliInput.split(" ");
+    let cmd =cliTokens[0]; // first is cmd
+
+    let kvs={};
+    cliTokens.map( (kv) =>
+                  kvs[ kv.split("=")[0] ] = kv.split("=")[1] );
+
+    if(cmd==="random"){
+           myChart.data.datasets[0].data=
+           myChart.data.datasets[0].data.map((x)=> getRandomInt(0,20));
+    }
+
+    if(cmd==="increase"){
+        myChart.data.datasets[0].data=
+           myChart.data.datasets[0].data.map((x)=> x+1);
+    }
+
+    if(cmd==="decrease"){
+        myChart.data.datasets[0].data=
+           myChart.data.datasets[0].data.map((x)=> x-1);
+    }
+
+    if(cmd=="post"){
+         postData('./json-hook/', { answer: 42 })
+         .then(data => {
+              console.log(data); // JSON data parsed by `data.json()` call
+         });
+    
+    }
+    cliStatus.innerHTML=cmd;
+ 
+    myChart.update();
+} 
+
+// Example POST method implementation:
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+async function postData(url = '', data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: 'POST', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'no-cache', //  no-cache, reload, force-cache, only-if-cached
+    credentials: 'same-origin', // include, *same-origin, omit
+    headers: {
+      //'Content-Type': 'application/json'
+       'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: 'follow', // manual, *follow, error
+    referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data) // body data type must match "Content-Type" header
+  });
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+
+
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+}
+
+document.getElementById("cliForm").
+    addEventListener("submit", handleCliSubmit );
+
+const ctx = document.getElementById('chartA');
+const myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: '# of Votes',
+            data: [12, 19, 3, 5, 2, 3],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(255, 206, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(255, 159, 64, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(75, 192, 192, 1)',
+                'rgba(153, 102, 255, 1)',
+                'rgba(255, 159, 64, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+</script>
+
+
+</body>
+</html>
