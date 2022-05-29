@@ -9,7 +9,7 @@ import os
 import sys
 import markdown
 
-app = Flask(__name__,  static_url_path='/_static')
+app = Flask(__name__,  static_url_path='/static')
 
 #Optional
 #from flask_autoindex import AutoIndex                                           #AutoIndex(app, browse_root='./write')  
@@ -48,10 +48,17 @@ def pdb():
    import pdb; pdb.set_trace()
    return 'After PDB debugging session, now execution continues...'
 
+
 @app.route("/json-hook", methods = ['POST', 'GET'])
 def json_hook():
-   out = os.popen("./json-hook").read()
-   return out
+    """ Uses request.form: the key/value pairs in the body,
+    from a HTML post form, or JavaScript request that 
+    isn't JSON encoded. """
+    #import pdb; pdb.set_trace()
+    #pprint(vars(request.get_json()))  
+    pprint(request.get_json())
+    return os.popen("./json-hook").read()
+
  
 @app.route("/json")
 def get_json():
@@ -60,6 +67,6 @@ def get_json():
 if __name__ == '__main__':
     portEnv=os.getenv("DS_PORT",9992)
     port=sys.argv[1]
-    port = port if port else envPort 
+    port = port if port else portEnv 
     print(f'Using port: {port}')
     app.run(debug=1, host='0.0.0.0', port=port) 

@@ -1,6 +1,6 @@
 DS_DIR=~/src/ds-study-group
 
-source $DS_DIR/server/dstool-server.sh
+source $DS_DIR/server/ds-server.sh
 
 function dstool-help(){
 cat <<EOF
@@ -27,17 +27,30 @@ https://virtualenv.pypa.io/en/latest/user_guide.html
 EOF
 }
 
-function dstool-activate(){
-  source server/ds-dev/bin/activate
-}
-
 dstool-activate(){
   source $DS_DIR/ds-dev/bin/activate
 }
 
+dstool-install-pyenv(){
+  python3 -m venv ds-dev # creates a Python3 virtualenv
+}
+
+dstool-install-jupyter-lab(){
+  source $DS_DIR/ds-dev/bin/activate
+  pip install jupyterlab 
+}
+
 dstool-install-dev(){
   sudo apt-get install python3-dev # needed for compiling
-  pip install rpy2 # probably don't need r inside of py
+}
+
+dstool-install-python-packages(){
+  false && ( 
+    wget https://github.com/ydataai/pandas-profiling/archive/master.zip
+    unzip master
+    cd pandas_profiling
+    python setup.py install )
+
 }
 
 dstool-install-rjupyter(){
@@ -50,7 +63,7 @@ EOF
 
 dstool-start-jupyterlab(){
    cd ~/src/ds-study-group/notebooks/
-  jupyter-lab 
+  jupyter-lab  .
 }
 
 

@@ -35,13 +35,20 @@ function ds-server-start(){
   nohup python3 $appname $port > ./logs/$port.txt 2>&1 &
   ds_server_pid=$!
 }
+function ds-server-start-debug-linux(){
+  port=${1:-9998}
+  appname="./ds-server.py"
+  #mkfifo ./logs/$port.fifo 
+  python3  -m pdb $appname $port 
+  ds_server_pid=$!
+}
 
-function ds-server-start-debug(){
+function ds-server-start-debug-vscode(){
   port=${1:-9993}
   appname="./ds-server.py"
   #mkfifo ./logs/$port.fifo 
-  nohup python3 $appname $port -m debugpy \
-    --listen 0.0.0.0:5678 > ./logs/$port.txt 2>&1 &
+  nohup python3  -m debugpy \
+    --listen 0.0.0.0:5678 $appname $port > ./logs/$port.txt 2>&1 &
   ds_server_pid=$!
 }
 
@@ -57,15 +64,16 @@ function ds-server-restart(){
 }
 
 function ds-server-list(){
-  ps -ef | grep "python3 ./ds-server.py" | grep -v grep # ignore the grep process 
+  ps -ef | grep "python3 ./ds-server.py" | grep -v grep # ignore the grep
+  ps -ef | grep "python3 -m debugpy" | grep -v grep # capture debug 
+  ps -ef | grep "5678" | grep -v grep # capture debug 
 }
 
 function ds-server-kill(){
-  echo 'assumes name starts with ds-server'
-  ps -ef | grep ds-server | grep -v grep | awk '{print $2}' | xargs kill $1
-
+  kill $(ds-server-list | awk '{print $2}')
 }
 
                                                                                 
-function ds-server-activate(){                                                     source ds-dev/bin/activate                                             
+function ds-server-activate(){
+  source ds-dev/bin/activate                                             
 } 
