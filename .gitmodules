@@ -1,0 +1,3 @@
+[submodule "mindwave/MindMonitorPython"]
+	path = mindwave/MindMonitorPython
+	url = git@github.com:Enigma644/MindMonitorPython.git
