@@ -1,6 +1,7 @@
 notebooks/airbnb-nyc-rae/
 .DS_Store
 *.swp
+*.png
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
