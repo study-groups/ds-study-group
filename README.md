@@ -1,5 +1,9 @@
-### Todo
-- Review and integrate info at [Homemade Machine Learning](https://github.com/trekhleb/homemade-machine-learning).
+
+## Currently
+- Reviewing and integrating info 
+  from Oleksii Trekhleb's [Homemade Machine Learning](https://github.com/trekhleb/homemade-machine-learning). 
+Trekhleb's foundation based on Andrew Ng's foundational courses. No better place to learn the lingo than Ng
+and the Homemade Machin Learning examples are top-notch, good use of React + Material Ui, too.
 
 # ds-study-group
 The three legs of data science:
@@ -97,7 +101,7 @@ Python and statistics.
 
 ### Online courses
 - [CS230 Deep Learning at Stanford by Adrew Ng](https://cs230.stanford.edu/syllabus/): Dr. Ng is great. Founder of Coursea.
-- [Stanford NLP](http://web.stanford.edu/class/cs224n/): Christopher Mannering et. al at Stanford.
+- [Stanford NLP](http://web.stanford.edu/class/cs224n/): Christopher Manning et. al at Stanford.
 
 ### Projects
 - [ds-projects](https://github.com/study-groups/ds-projects): Boot camp capstone projects.
