@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindMonitor EEG Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div id="vis"></div>
+    <script type="text/javascript">
+        const spec = {
+            "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+            "facet": {
+                "field": "channel",
+                "type": "ordinal",
+                "spacing": 2 
+            },
+            "columns":1,
+            "spec": {
+                "mark": "line",
+                "width": "400",
+                "height": "30",
+                "encoding": {
+                    "x": {"field": "index", "type": "quantitative", "title": "Sample"},
+                    "y": {
+                        "field": "value",
+                        "type": "quantitative",
+                        "title": "Voltage (µV)",
+                        "scale": {"zero": false},
+                        "axis": {
+                            "title": "Voltage (µV)",
+                            "titlePadding": 15
+                        }
+                    }
+                },
+            },
+        };
+
+        function updateVega() {
+            d3.text("eeg_data.json").then(function(textData) {
+                let data = textData
+                    .trim()
+                    .split("\n")
+                    .map(line => JSON.parse(line));
+
+                const transformedData = data.flatMap((d, i) => [
+                    {index: i, value: d.ch1, channel: "ch1"},
+                    {index: i, value: d.ch2, channel: "ch2"},
+                    {index: i, value: d.ch3, channel: "ch3"},
+                    {index: i, value: d.ch4, channel: "ch4"},
+                ]);
+
+                const startIndex = Math.max(0, transformedData.length - 1280);
+                const filteredData = transformedData.slice(startIndex);
+
+                spec.data = {values: filteredData};
+                vegaEmbed('#vis', spec);
+            });
+        }
+
+        setInterval(updateVega, 500);
+    </script>
+</body>
+</html>
