@@ -1,0 +1,5 @@
+#!/bin/bash
+nectar="/home/devops/src/live-topic-analysis/investigations/sparkline/nectardb"
+$nectar/gen/genAbs 10 10 | jq -s .
+
+
