@@ -1,5 +1,4 @@
-DS_DIR=~/src/ds-study-group
-
+DS_DIR=${DS_DIR:-"~/src/ds-study-group"}
 source $DS_DIR/server/ds-server.sh
 
 function ds-help(){
