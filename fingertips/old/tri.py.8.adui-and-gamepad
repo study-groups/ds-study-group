@@ -1,0 +1,55 @@
+import numpy as np
+import pygame
+import sounddevice as sd
+
+# Disable the video system to avoid errors
+pygame.display.set_mode((1, 1), pygame.NOFRAME)
+
+# Define some constants for audio generation
+SAMPLE_RATE = 48000  # The sample rate of the audio signal
+DURATION = 0.1  # The duration of each audio buffer (in seconds)
+FREQUENCY = 220  # The frequency of the audio tone (in Hz)
+VOLUME = 0.1  # The starting volume (as a fraction of max)
+MAX_VOLUME = 1.0  # The maximum volume (as a fraction of max)
+MIN_VOLUME = 0.001  # The minimum volume (as a fraction of max)
+VOLUME_STEP = 0.5  # The amount to increase/decrease the volume by when a button is pressed
+
+# Define a generator function to generate the sine wave samples
+def sine_wave_generator():
+    while True:
+        t = np.linspace(0, DURATION, int(DURATION * SAMPLE_RATE), endpoint=False)
+        samples = VOLUME * np.sin(2 * np.pi * FREQUENCY * t)
+        yield samples.astype(np.float32)
+
+# Define the audio callback function
+def audio_callback(outdata, frames, time, status):
+    samples = sine_wave_generator().__next__()
+    outdata[:] = np.repeat(samples.reshape((-1, 1)), 2, axis=1)
+
+# Start the audio stream
+with sd.OutputStream(channels=2, blocksize=int(DURATION * SAMPLE_RATE), samplerate=SAMPLE_RATE, callback=audio_callback):
+    # Initialize Pygame and the game controller
+    pygame.init()
+    pygame.joystick.init()
+    joystick = pygame.joystick.Joystick(0)
+    joystick.init()
+
+    # Start the video capture loop
+    while True:
+        # Check for gamepad events and print them to the console
+        for event in pygame.event.get():
+            if event.type == pygame.JOYAXISMOTION:
+                print(f"Joystick axis motion: axis={event.axis}, value={event.value}")
+            elif event.type == pygame.JOYBUTTONDOWN:
+                print(f"Joystick button down: button={event.button}")
+            elif event.type == pygame.JOYBUTTONUP:
+                print(f"Joystick button up: button={event.button}")
+
+        # Update the volume based on the gamepad input
+        if joystick.get_button(3):  # Check if the volume up button is pressed
+            VOLUME = min(VOLUME * 2 ** (0.5/20), MAX_VOLUME)
+        elif joystick.get_button(2):  # Check if the volume down button is pressed
+            VOLUME = max(VOLUME * 2 ** (-0.5/20), MIN_VOLUME)
+
+        # Wait for a short time to avoid consuming too much CPU
+        pygame.time.wait(10)
