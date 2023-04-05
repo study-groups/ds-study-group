@@ -1,0 +1,17 @@
+import math
+
+class PaperFolding:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+        self.alpha = math.atan(self.b / self.a)
+        self.beta = math.atan(self.a / self.b)
+    
+    def get_coordinate(self, x, y):
+        """
+        Returns the folded coordinates of a point (x, y) on the unfolded paper
+        """
+        x1 = x * math.cos(self.alpha) + y * math.sin(self.alpha)
+        y1 = x * math.sin(self.beta) + y * math.cos(self.beta)
+        return x1, y1
+

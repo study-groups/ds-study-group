@@ -1,0 +1,62 @@
+import math
+from paper_folding import PaperFolding
+
+class PaperSvg:
+    def __init__(self, border_width=3, color_a='red', color_b='blue', fold_color='purple', width=300, height=400, paper_folding=None):
+        self.border_width = border_width
+        self.color_a = color_a
+        self.color_b = color_b
+        self.fold_color = fold_color
+        self.width = width
+        self.height = height
+        self.paper_folding = paper_folding
+        if self.paper_folding is None:
+            self.paper_folding = PaperFolding(self.width, self.height)
+    
+    def getOrig(self):
+        """
+        Returns SVG code for the unfolded paper with no markings
+        """
+        svg = f'<svg width="{self.width}" height="{self.height}">\n'
+        svg += f'  <rect x="0" y="0" width="{self.width}" height="{self.height}" stroke="black" stroke-width="{self.border_width}" fill="none"/>\n'
+        svg += '</svg>'
+        return svg
+    
+
+    def getMarked(self):
+        """
+        Returns SVG code for the unfolded paper with markings
+        for a and b after a random fold
+        """
+        folded_paper = self.paper_folding.apply_fold()
+        
+        # Compute the intersection points of the folded paper with the top and bottom edges of the paper
+        a = get_intersect_point(folded_paper[0], folded_paper[5], 0)
+        b = get_intersect_point(folded_paper[6], folded_paper[3], 0)
+        
+        svg = f'<svg width="{self.width}" height="{self.height}">\n'
+        svg += f'  <rect x="0" y="0" width="{self.width}" height="{self.height}" stroke="black" stroke-width="{self.border_width}" fill="none"/>\n'
+        svg += f'  <line x1="{a[0]}" y1="{a[1]}" x2="{folded_paper[5][0]}" y2="{folded_paper[5][1]}" stroke="{self.color_a}" stroke-width="{self.border_width}"/>\n'
+        svg += f'  <line x1="{folded_paper[6][0]}" y1="{folded_paper[6][1]}" x2="{b[0]}" y2="{b[1]}" stroke="{self.color_b}" stroke-width="{self.border_width}"/>\n'
+        svg += '</svg>'
+        return svg
+
+
+
+    def getFolded(self):
+        """
+        Returns SVG code for the folded paper after folding a then b
+        """
+        svg = f'<svg width="{self.width}" height="{self.height}">\n'
+        svg += f'  <rect x="0" y="0" width="{self.width}" height="{self.height}" stroke="black" stroke-width="{self.border_width}" fill="none"/>\n'
+        x1, y1 = self.paper_folding.get_coordinate(0)
+        x2, y2 = self.paper_folding.get_coordinate(1)
+        x3, y3 = self.paper_folding.get_coordinate(2)
+        x4, y4 = self.paper_folding.get_coordinate(3)
+        svg += f'  <line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{self.fold_color}" stroke-width="{self.border_width}"/>\n'
+        svg += f'  <line x1="{x2}" y1="{y2}" x2="{x3}" y2="{y3}" stroke="black" stroke-width="{self.border_width}"/>\n'
+        svg += f'  <line x1="{x3}" y1="{y3}" x2="{x4}" y2="{y4}" stroke="black" stroke-width="{self.border_width}"/>\n'
+        svg += f'  <line x1="{x4}" y1="{y4}" x2="{x1}" y2="{y1}" stroke="black" stroke-width="{self.border_width}"/>\n'
+        svg += '</svg>'
+        return svg
+

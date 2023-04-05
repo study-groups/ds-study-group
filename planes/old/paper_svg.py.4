@@ -1,0 +1,36 @@
+import svgwrite
+from paper_folding import PaperFolding
+
+
+class PaperSvg:
+    def __init__(self, width=300, height=400,
+            border_width=3, a_color='red',
+            b_color='blue', fold_color='purple'):
+        self.width = width
+        self.height = height
+        self.border_width = border_width
+        self.a_color = a_color
+        self.b_color = b_color
+        self.fold_color = fold_color
+        self.marks = []
+
+    def render(self, file_name):
+        dwg = svgwrite.Drawing(file_name,
+                size=(f"{self.width}px", f"{self.height}px"))
+
+        # Draw the border of the paper
+        dwg.add(dwg.rect(
+            (self.border_width, self.border_width),
+            (self.width - 2 * self.border_width,
+                self.height - 2 * self.border_width),
+                stroke='black',
+                fill='none',
+                stroke_width=self.border_width))
+
+        # Draw the creases on the paper
+        for mark in self.marks:
+            p1, p2 = mark
+            dwg.add(dwg.line(p1, p2, 
+                stroke=self.fold_color, stroke_width=self.border_width))
+
+        dwg.save()

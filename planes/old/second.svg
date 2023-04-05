@@ -1,0 +1,13 @@
+<svg width="300" height="400">
+  <rect x="0" y="0" width="300" height="400" stroke="black" stroke-width="5" fill="none"/>
+</svg>
+<svg width="300" height="400">
+  <rect x="0" y="0" width="300" height="400" stroke="black" stroke-width="5" fill="none"/>
+  <line x1="0" y1="0" x2="300" y2="0" stroke="purple" stroke-width="5"/>
+  <line x1="0" y1="0" x2="0" y2="400" stroke="blue" stroke-width="5"/>
+</svg>
+<svg width="300" height="400">
+  <rect x="0" y="0" width="300" height="400" stroke="black" stroke-width="5" fill="none"/>
+  <line x1="0.0" y1="0.0" x2="180.00000000000003" y2="180.0" stroke="black" stroke-width="5"/>
+  <line x1="0.0" y1="0.0" x2="320.0" y2="320.0" stroke="black" stroke-width="5"/>
+</svg>

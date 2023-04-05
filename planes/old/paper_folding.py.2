@@ -1,0 +1,47 @@
+import math
+
+class PaperFolding:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+        self.folded_paper = [(0, 0), (width, 0), (width, height), (0, height)]
+    
+    def get_state_space(self):
+        """
+        Returns a list of tuples representing the state space of the folded paper.
+        Each tuple contains the (x, y) coordinates of the four corners of the folded paper.
+        """
+        return [tuple(p) for p in self.folded_paper]
+    
+    def fold(self, a, alpha, b, beta):
+        """
+        Applies a transformation to the current folded paper.
+        The transformation is specified by the line 'a' and 'b', and the angles 'alpha' and 'beta'.
+        """
+        x1 = float('inf') if alpha % (math.pi / 2) == 0 else a / math.tan(alpha)
+        x2 = (a - self.height * math.tan(alpha)) / math.tan(alpha) if alpha % (math.pi / 2) != 0 else self.width
+
+        y3 = float('inf') if beta % (math.pi / 2) == 0 else b / math.tan(beta)
+        y4 = (b - self.width * math.tan(beta)) / math.tan(beta) if beta % (math.pi / 2) != 0 else self.height
+
+        # Apply the transformation to the folded paper
+        folded_paper = [
+            (x1, 0),
+            (x2, 0),
+            (self.width, y4),
+            (self.width, self.height),
+            (x2, self.height),
+            (x1, self.height),
+            (0, y3),
+            (0, 0)
+        ]
+        
+        self.folded_paper = folded_paper
+
+    def get_coordinate(self, point_index):
+        """
+        Returns the (x, y) coordinate of the specified point on the folded paper.
+        The point is specified by its index (0-3).
+        """
+        return tuple(self.folded_paper[point_index])
+

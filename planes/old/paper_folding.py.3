@@ -1,0 +1,74 @@
+import math
+import random
+
+class PaperFolding:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+        self.folded_paper = [(0, 0), (width, 0), (width, height), (0, height)]
+    
+    def get_state_space(self):
+        """
+        Returns a list of tuples representing the state space of the folded paper.
+        Each tuple contains the (x, y) coordinates of the four corners of the folded paper.
+        """
+        return [tuple(p) for p in self.folded_paper]
+    
+    def apply_fold(self, a, alpha, b, beta):
+        """
+        Applies a transformation to the current folded paper.
+        The transformation is specified by the line 'a' and 'b', and the angles 'alpha' and 'beta'.
+        Returns a list of tuples representing the folded paper after the transformation.
+        """
+        x1 = a / math.tan(alpha) if alpha % (math.pi / 2) != 0 else float('inf')
+        x2 = (a - self.height * math.tan(alpha)) / math.tan(alpha) if alpha % (math.pi / 2) != 0 else float('inf')
+        y3 = b / math.tan(beta) if beta % (math.pi / 2) != 0 else float('inf')
+        y4 = (b - self.width * math.tan(beta)) / math.tan(beta) if beta % (math.pi / 2) != 0 else float('inf')
+
+        folded_paper = [
+            (x1, 0),
+            (x2, 0),
+            (self.width, y4),
+            (self.width, self.height),
+            (x2, self.height),
+            (x1, self.height),
+            (0, y3),
+            (0, 0)
+        ]
+        
+        return folded_paper
+    
+    def apply_random_fold(self):
+        """
+        Applies a random fold to the current folded paper.
+        Returns a list of tuples representing the folded paper after the transformation.
+        """
+        a = random.uniform(0, max(self.width, self.height))
+        alpha = random.uniform(0, math.pi)
+        b = random.uniform(0, max(self.width, self.height))
+        beta = random.uniform(0, math.pi)
+        
+        return self.apply_fold(a, alpha, b, beta)
+
+    def get_coordinate(self, index):
+        """
+        Returns the x,y coordinates of the corner at the specified index
+        """
+        return self.folded_paper[index]
+
+    def get_intersect_point(self, x1, y1, x2, y2, x3, y3, x4, y4):
+        """
+        Returns the intersection point of two lines specified by the given coordinates.
+        If the lines are parallel, returns None.
+        """
+        dx1 = x2 - x1
+        dy1 = y2 - y1
+        dx2 = x4 - x3
+        dy2 = y4 - y3
+        denom = dx1 * dy2 - dx2 * dy1
+        if abs(denom) < 1e-6:
+            # lines are parallel
+            return None
+        ua = (dx2 * (y1 - y3) - dy2 * (x1 - x3)) / denom
+        return x1 + ua * dx1, y1 + ua * dy1
+

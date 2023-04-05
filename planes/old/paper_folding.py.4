@@ -1,0 +1,62 @@
+import math
+import random
+
+class PaperFolding:
+    def __init__(self, paper):
+        self.width = paper.width
+        self.height = paper.height
+        self.marks = []
+    
+    def get_state_space(self):
+        """
+        Returns a list of tuples representing the state space of the folded paper.
+        Each tuple contains the (x, y) coordinates of the lines indicating folds.
+        """
+        return self.marks
+    
+    def mark_fold(self, a, alpha):
+        """
+        Marks a fold on the paper.
+        The fold is specified by the line 'a' and the angle 'alpha'.
+        """
+        x1 = a / math.tan(alpha) if alpha % (math.pi / 2) != 0 else float('inf')
+        x2 = (a - self.height * math.tan(alpha)) / math.tan(alpha) if alpha % (math.pi / 2) != 0 else float('inf')
+        y3 = float('inf')
+        y4 = float('inf')
+
+        mark = [(x1, 0), (x2, 0)]
+
+        if x1 < 0:
+            # Compute the intersection point of the line with the left edge of the paper
+            y3 = a / math.sin(alpha) if alpha != 0 else 0
+            mark.append((0, y3))
+
+        if x2 > self.width:
+            # Compute the intersection point of the line with the right edge of the paper
+            y4 = (a - self.width * math.tan(alpha)) / math.tan(alpha) if alpha % (math.pi / 2) != 0 else float('inf')
+            mark.append((self.width, y4))
+
+        if y3 == float('inf') and y4 == float('inf'):
+            # Compute the intersection points of the line with the top and bottom edges of the paper
+            mark += [(self.width, self.height), (x2, self.height), (x1, self.height), (0, 0)]
+        elif y3 == float('inf'):
+            # Compute the intersection points of the line with the top and bottom edges of the paper
+            mark += [(self.width, self.height), (x2, self.height), (x1, self.height), (0, y4), (0, 0)]
+        elif y4 == float('inf'):
+            # Compute the intersection points of the line with the top and bottom edges of the paper
+            mark += [(self.width, self.height), (x2, self.height), (x1, self.height), (0, y3), (0, 0)]
+        else:
+            # Compute the intersection points of the line with the top and bottom edges of the paper
+            mark += [(self.width, y4), (self.width, self.height), (x2, self.height), (x1, self.height), (0, y3), (0, 0)]
+
+        self.marks.append(mark)
+    
+    def apply_random_fold(self):
+        """
+        Applies a random fold to the current folded paper.
+        Marks the fold on the paper and returns the mark.
+        """
+        a = random.uniform(0, max(self.width, self.height))
+        alpha = random.uniform(0, math.pi)
+        self.mark_fold(a, alpha)
+        return self.marks[-1]
