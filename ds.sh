@@ -31,8 +31,12 @@ ds-activate(){
   source $DS_DIR/ds-dev/bin/activate
 }
 
-ds-install-pyenv(){
+ds-install(){
   sudo apt-get install python3-dev # needed for compiling
+  ds-install-pyenv
+}
+
+ds-install-pyenv(){
   DS_DIR=${DS_DIR:-"$PWD/ds-dev"}
   echo "Instaiing in $DS_DIR/ds-dev"
  # creates a Python3 virtualenv
@@ -44,8 +48,6 @@ ds-install-jupyter-lab(){
   pip install jupyterlab 
 }
 
-ds-install-dev(){
-}
 
 ds-install-python-packages(){
   false && ( 
