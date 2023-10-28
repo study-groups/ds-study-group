@@ -1,9 +1,12 @@
 
 ## Currently
-- Reviewing and integrating info 
-  from Oleksii Trekhleb's [Homemade Machine Learning](https://github.com/trekhleb/homemade-machine-learning). 
-Trekhleb's foundation based on Andrew Ng's foundational courses. No better place to learn the lingo than Ng
-and the Homemade Machin Learning examples are top-notch, good use of React + Material Ui, too.
+
+[Pre-trained Gaussian processes for Bayesian optimization](https://ai.googleblog.com/2023/04/pre-trained-gaussian-processes-for.html) 
+
+THURSDAY, APRIL 06, 2023
+Posted by Zi Wang and Kevin Swersky, Research Scientists, Google Research, Brain Team
+
+Bayesian optimization (BayesOpt) is a powerful tool widely used for global optimization tasks, such as hyperparameter tuning, protein engineering, synthetic chemistry, robot learning, and even baking cookies. BayesOpt is a great strategy for these problems because they all involve optimizing black-box functions that are expensive to evaluate. A black-box function’s underlying mapping from inputs (configurations of the thing we want to optimize) to outputs (a measure of performance) is unknown. However, we can attempt to understand its internal workings by evaluating the function for different combinations of inputs. Because each evaluation can be computationally expensive, we need to find the best inputs in as few evaluations as possible. BayesOpt works by repeatedly constructing a surrogate model of the black-box function and strategically evaluating the function at the most promising or informative input location, given the information observed so far.
 
 # ds-study-group
 The three legs of data science:
@@ -31,7 +34,6 @@ The three legs of data science:
 - [GitPod](https://www.gitpod.io/): VS Code in the cloud that works directly with Git repositories on GitLab or GitHub.
 
 ## Statistics
-
 
 - [Statistics for Hackers](https://www.youtube.com/watch?v=Iq9DzN6mvYA) Jake Vanderplus's nice bridge between
 Python and statistics.
@@ -100,7 +102,11 @@ Python and statistics.
 ## Resources
 
 ### Online courses
+
 - [CS230 Deep Learning at Stanford by Adrew Ng](https://cs230.stanford.edu/syllabus/): Dr. Ng is great. Founder of Coursea.
+
+- [Homemade Machine Learning](https://github.com/trekhleb/homemade-machine-learning). Oleksii Trekhleb's notes on Andrew Ng's foundational courses.
+
 - [Stanford NLP](http://web.stanford.edu/class/cs224n/): Christopher Manning et. al at Stanford.
 
 ### Projects
