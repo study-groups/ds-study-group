@@ -1,5 +1,6 @@
-DS_DIR=${DS_DIR:-"~/src/ds-study-group"}
-source $DS_DIR/server/ds-server.sh
+DS_ENV=${DS_ENV:-"$HOME/ds-env"}
+DS_DIR=${DS_DIR:-"$HOME/src/ds-study-group"}
+#source $DS_DIR/server/ds-server.sh
 
 function ds-help(){
 cat <<EOF
@@ -17,7 +18,7 @@ python3 -m venv ds-dev # creates a Python3 virtualenv
 
 Run
 ---
-$source ds-dev/bin/activate
+source ds-dev/bin/activate
 (ds-dev)$ 
 
 Install notes
@@ -27,23 +28,31 @@ EOF
 }
 
 ds-activate(){
-  source $DS_DIR/ds-dev/bin/activate
+  source $DS_ENV/bin/activate
 }
 
-ds-install(){
-  sudo apt-get install python3-dev # needed for compiling
-  ds-install-pyenv
+ds-install-bootstrap(){
+  echo "This allows system python to install pyenv"
+  sudo apt-get install python3-dev
+  echo "Now run ds-install-env"
 }
 
-ds-install-pyenv(){
-  DS_DIR=${DS_DIR:-"$PWD/ds-dev"}
-  echo "Instaiing in $DS_DIR/ds-dev"
- # creates a Python3 virtualenv
-  python3 -m venv $DS_DIR/ds-dev
+ds-install-env(){
+  local dirname="ds-dev"
+  DS_ENV=${DS_ENV:-"$HOME/ds-env"}
+  echo "Creating Python venv at $DS_ENV return to continue"
+  read
+  echo "Creating virtual env at $DS_ENV"
+  python3 -m venv "$DS_ENV"
+  echo "Now ds-install-requirements"
+}
+
+ds-install-requirements(){
+  pip install -r ./requirements.txt
 }
 
 ds-install-jupyter-lab(){
-  source $DS_DIR/ds-dev/bin/activate
+  source $DS_ENV/bin/activate
   pip install jupyterlab 
 }
 

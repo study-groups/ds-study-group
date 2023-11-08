@@ -73,7 +73,6 @@ function ds-server-kill(){
   kill $(ds-server-list | awk '{print $2}')
 }
 
-                                                                                
 function ds-server-activate(){
   source ds-dev/bin/activate                                             
 } 
