@@ -1,4 +1,4 @@
-DS_ENV=${DS_ENV:-"$HOME/ds-env"}
+DS_ENV=${DS_ENV:-"$HOME/ds-dev"}
 DS_DIR=${DS_DIR:-"$HOME/src/ds-study-group"}
 #source $DS_DIR/server/ds-server.sh
 
