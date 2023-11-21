@@ -39,7 +39,7 @@ ds-install-bootstrap(){
 
 ds-install-env(){
   local dirname="ds-dev"
-  DS_ENV=${DS_ENV:-"$HOME/ds-env"}
+  DS_ENV=${DS_ENV:-"$HOME/ds-dev"}
   echo "Creating Python venv at $DS_ENV return to continue"
   read
   echo "Creating virtual env at $DS_ENV"
