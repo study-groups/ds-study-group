@@ -1,6 +1,9 @@
-DS_ENV=${DS_ENV:-"$HOME/ds-dev"}
-DS_DIR=${DS_DIR:-"$HOME/src/ds-study-group"}
-#source $DS_DIR/server/ds-server.sh
+DS_ENV=${DS_ENV:-"$HOME/ds-env"}
+DS_SRC=${DS_SRC:-"$HOME/src/ds-study-group"}
+
+echo "  Data Science Tools: DS_SRC=$DS_SRC"
+echo "  Data Science Tools: DS_ENV=$DS_ENV"
+#source $DS_SRC/server/ds-server.sh
 
 function ds-help(){
 cat <<EOF
@@ -38,17 +41,16 @@ ds-install-bootstrap(){
 }
 
 ds-install-env(){
-  local dirname="ds-dev"
-  DS_ENV=${DS_ENV:-"$HOME/ds-dev"}
-  echo "Creating Python venv at $DS_ENV return to continue"
+  echo "Creating Python venv at DS_ENV=$DS_ENV return to continue"
   read
   echo "Creating virtual env at $DS_ENV"
   python3 -m venv "$DS_ENV"
+  ds-activate
   echo "Now ds-install-requirements"
 }
 
 ds-install-requirements(){
-  pip install -r ./requirements.txt
+  pip install -r $DS_SRC/requirements.txt
 }
 
 ds-install-jupyter-lab(){
@@ -75,7 +77,7 @@ EOF
 }
 
 ds-start-jupyterlab(){
-   cd ~/src/ds-study-group/notebooks/
+   cd $DS_SRC/notebooks/
   jupyter-lab  .
 }
 
