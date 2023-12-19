@@ -1,9 +1,0 @@
-i                           _____________      _____________      _____________
-                           |             |    |             |    |             |
-                    Input  | Transformer | -> | Transformer | -> | Transformer | -> Output
-                    Sequence             |    |             |    |             |
-                            _____________      _____________      _____________
-                             | Context |        | Context |        | Context |
-                             |   Vector|        |   Vector|        |   Vector|
-                             |_________|        |_________|        |_________|
-
