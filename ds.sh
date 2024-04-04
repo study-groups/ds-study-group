@@ -3,7 +3,6 @@ DS_SRC=${DS_SRC:-"$HOME/src/ds-study-group"}
 
 echo "  Data Science Tools: DS_SRC=$DS_SRC"
 echo "  Data Science Tools: DS_ENV=$DS_ENV"
-#source $DS_SRC/server/ds-server.sh
 
 function ds-help(){
 cat <<EOF
