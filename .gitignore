@@ -1,4 +1,5 @@
-notebooks/airbnb-nyc-rae/
+old
+node_modules
 .DS_Store
 *.swp
 *.png
