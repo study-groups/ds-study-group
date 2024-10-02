@@ -26,7 +26,7 @@ for any $(k+1)$-dimensional manifold $Sigma$ with boundary $diff Sigma$. Here, $
 
 == Applications in Topology and Geometry
 
-This boundary-extraction view of the derivative has profound implications in topology and geometry. For instance, in the study of manifolds, the exterior derivative $d$ provides a way to understand the structure of differential forms and their interactions with the underlying manifold.
+This boundary-extraction view of the derivative has implications in topology and geometry. For instance, in the study of manifolds, the exterior derivative $d$ provides a way to understand the structure of differential forms and their interactions with the underlying manifold.
 
 In de Rham cohomology, the cohomology groups $H^k(M)$ of a manifold $M$ are defined using the exterior derivative. The $k$-th cohomology group $H^k(M)$ consists of closed $k$-forms (those for which $d omega = 0$) modulo exact $k$-forms (those for which $omega = d eta$ for some $(k-1)$-form $eta$). Here, the derivative $d$ plays a crucial role in identifying boundaries within the space of differential forms.
 

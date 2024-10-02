@@ -12,6 +12,8 @@ Fiber bundles are an essential concept in differential geometry, which finds its
 
 In the realm of machine learning, particularly in unsupervised learning and data representation, understanding the structure of data manifolds is crucial. Fiber bundles offer a powerful framework to model these structures, providing insights into the intrinsic geometry of data spaces. This essay explores the concept of fiber bundles and their applications in machine learning.
 
+#image("./svg/fiber-bundle-diagram.svg")
+
 == Fiber Bundles: Definition and Components
 
 A fiber bundle is a quadruple $(E, B, F, pi)$ where:
