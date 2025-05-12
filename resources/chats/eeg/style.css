@@ -1,0 +1,17 @@
+.popup {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+}
+body { font-family: Arial, sans-serif; margin: 20px; }
+.container { display: flex; flex-direction: column; }
+img { width: 100%; height: auto; max-width: 100%; }
+.glossary { margin-top: 20px; }
+.glossary-table { border-collapse: collapse; width: 100%; }
+.glossary-table th, .glossary-table td { border: 1px solid #ddd; text-align: left; padding: 8px; }
+.glossary-table th { background-color: #f2f2f2; }

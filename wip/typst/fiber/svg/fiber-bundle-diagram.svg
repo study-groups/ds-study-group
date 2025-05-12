@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Base space B with pseudo-3D effect -->
+  <ellipse cx="250" cy="350" rx="200" ry="30" fill="#e0e0e0" stroke="#000" />
+  <ellipse cx="250" cy="355" rx="200" ry="30" fill="none" stroke="#000" stroke-dasharray="5,5" />
+  <text x="250" y="355" font-family="Arial" font-size="16" text-anchor="middle">Base Space B</text>
+
+  <!-- Fibers over points in B with pseudo-3D effect -->
+  <line x1="150" y1="120" x2="150" y2="320" stroke="#000" />
+  <line x1="150" y1="120" x2="160" y2="320" stroke="#000" opacity="0.5" />
+  <circle cx="150" cy="320" r="4" fill="#000" />
+  <circle cx="160" cy="320" r="4" fill="#000" opacity="0.5" />
+
+  <line x1="250" y1="100" x2="250" y2="320" stroke="#000" />
+  <line x1="250" y1="100" x2="260" y2="320" stroke="#000" opacity="0.5" />
+  <circle cx="250" cy="320" r="4" fill="#000" />
+  <circle cx="260" cy="320" r="4" fill="#000" opacity="0.5" />
+
+  <line x1="350" y1="120" x2="350" y2="320" stroke="#000" />
+  <line x1="350" y1="120" x2="360" y2="320" stroke="#000" opacity="0.5" />
+  <circle cx="350" cy="320" r="4" fill="#000" />
+  <circle cx="360" cy="320" r="4" fill="#000" opacity="0.5" />
+
+  <!-- Projection map π with pseudo-3D effect -->
+  <line x1="150" y1="320" x2="150" y2="340" stroke="#000" marker-end="url(#arrowhead)" />
+  <line x1="160" y1="320" x2="160" y2="340" stroke="#000" marker-end="url(#arrowhead)" opacity="0.5" />
+  <line x1="250" y1="320" x2="250" y2="340" stroke="#000" marker-end="url(#arrowhead)" />
+  <line x1="260" y1="320" x2="260" y2="340" stroke="#000" marker-end="url(#arrowhead)" opacity="0.5" />
+  <line x1="350" y1="320" x2="350" y2="340" stroke="#000" marker-end="url(#arrowhead)" />
+  <line x1="360" y1="320" x2="360" y2="340" stroke="#000" marker-end="url(#arrowhead)" opacity="0.5" />
+
+  <!-- Labels for fibers -->
+  <text x="150" y="110" font-family="Arial" font-size="16" text-anchor="middle">Fiber F</text>
+  <text x="250" y="90" font-family="Arial" font-size="16" text-anchor="middle">Fiber F</text>
+  <text x="350" y="110" font-family="Arial" font-size="16" text-anchor="middle">Fiber F</text>
+
+  <!-- Define arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7"
+            refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000" />
+    </marker>
+  </defs>
+
+  <!-- Projection Map Label -->
+  <text x="370" y="310" font-family="Arial" font-size="16">π: E → B</text>
+</svg>

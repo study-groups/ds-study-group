@@ -1,0 +1,45 @@
+1. Browse url of paper
+2. copy into buffer
+3. paste in GPT4
+4. PROMPT:
+A. summarize the above, make a top-down flow chart of ideas in svg output
+identify semantic boundaries by coloring the background
+according to a meaningful category system that facilitates
+understanding this paper. Your output should be a python
+program called render.py which contains graphviz notation
+and wrapper code to write the top-down flow chart as graph.svg.
+
+B. Provide an index.html file that includes
+style.css
+wikiLinks.js
+fetchSummary.js
+along with a full index.html text following this template
+
+<head>
+<title>
+<couple sentences summarizing the upshot of the paper,
+include authors name and link to the paper as subtle as possible>
+<graph.svg: 100% width>
+<info panel dynamically updated by
+
+
+
+
+
+@ i want to refactor @graph_with_links.py so as
+to make prettier, more functional SVG upon graphviz's
+ render cycle. For example,
+
+<title>B</title> is not what we want,
+it should be more semantic. We could use
+the title data as input to the second pass
+that adds the right data- key/val after graphviz
+ generates the .svg. Even better would be if g
+ raphviz allows us to add DOM/HTML programmatically.
+
+Here is the work flow thus far:
+
+
+
+1. make wikilinks for each node
+2. ask GPT3.5 to get wikipedia
