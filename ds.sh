@@ -44,7 +44,8 @@ ds-install-env(){
   read
   echo "Creating virtual env at $DS_ENV"
   python3 -m venv "$DS_ENV"
-  echo "Now ds-install-requirements"
+  echo "Now ds-install-packages"
+  echo "or  ds-install-requirements"
 }
 
 ds-install-requirements(){
@@ -57,12 +58,22 @@ ds-install-jupyter-lab(){
 }
 
 
-ds-install-python-packages(){
+ds-install-packages(){
   false && ( 
-    wget https://github.com/ydataai/pandas-profiling/archive/master.zip
-    unzip master
-    cd pandas_profiling
-    python setup.py install )
+     wget https://github.com/ydataai/pandas-profiling/archive/master.zip
+     unzip master
+     cd pandas_profiling
+     python setup.py install
+   )
+
+  true && (
+    pip install jupyterlab 
+    python -m spacy download en_core_web_sm
+    pip install -U textblob
+    python -m textblob.download_corpora lite
+    pip install spacytextblob
+
+   )
 
 }
 
@@ -75,6 +86,7 @@ EOF
 }
 
 ds-start-jupyterlab(){
+  echo "This is typically called via systemctl's entrypoint.jh"
    cd ~/src/ds-study-group/notebooks/
   jupyter-lab  .
 }
